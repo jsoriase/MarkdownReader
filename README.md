@@ -1,94 +1,188 @@
 # Markdown Reader
 
-Visor nativo de Markdown para macOS, en SwiftUI. Pensado sobre todo para **leer**:
-abre un `.md` con doble clic y lo muestra formateado, con la opción de ver y
-editar el texto plano cuando hace falta.
+A native Markdown viewer for macOS, written in SwiftUI. It is built for
+**reading**: double-click a `.md` file and it opens rendered, with the source
+one keystroke away when you actually need to edit something.
 
+No web view, no Electron, no bundled JavaScript. Every heading, list, table and
+code block on screen is a real AppKit view.
 
-## Qué hace
+![The rendered view](docs/screenshots/rendered-view.png)
 
-**Lectura**
+## Features
 
-- Render nativo (nada de WebView): títulos, listas anidadas, tablas con
-  alineación, citas, avisos estilo GitHub (`> [!NOTE]`), imágenes locales y
-  remotas, metadatos YAML, líneas horizontales y enlaces por referencia.
-- Bloques de código con resaltado de sintaxis para ~30 lenguajes y botón de
-  copiar al pasar el ratón.
-- Índice lateral con filtro: al pulsar un título se salta a esa sección.
-- Tipografía ajustable (sistema, serif, redondeada o monoespaciada), tamaño y
-  ancho de línea configurables.
-- Los enlaces internos (`#seccion`) hacen scroll; los enlaces a otros `.md`
-  del mismo directorio abren una ventana nueva.
-- Las casillas de las listas de tareas se pueden marcar desde la vista
-  formateada: se escribe el cambio en el fichero.
+### Reading
 
-**Edición**
+- **Native rendering** of headings (ATX and Setext), nested lists, task lists,
+  tables with column alignment, block quotes, fenced and indented code, images,
+  thematic breaks, YAML front matter and reference links.
+- **GitHub-style callouts** — `> [!NOTE]`, `TIP`, `IMPORTANT`, `WARNING`,
+  `CAUTION` — rendered with their own icon and colour.
+- **Syntax highlighting** in fenced code blocks for over 60 language tags, plus
+  a hover-to-copy button on every block.
+- **Outline sidebar** with a filter field; picking a heading scrolls the
+  rendered view, or jumps the caret to that line in the source view.
+- **Working links**: `#anchor` links scroll to the heading, links to sibling
+  `.md` files open in a new window, bare URLs are auto-linked, and everything
+  else goes to your browser.
+- **Interactive checkboxes**: ticking a task in the rendered view rewrites that
+  line in the file.
+- **Reading controls** — typeface (system, serif, rounded, monospaced), text
+  size, column width, light/dark/automatic appearance — and a status bar with
+  line, word and character counts plus an estimated reading time.
 
-- Vista de código fuente con numeración de líneas, resaltado del propio
-  Markdown y búsqueda (⌘F). Las comillas tipográficas y demás sustituciones
-  automáticas están desactivadas para no corromper el fichero.
-- Guardado estándar del sistema (⌘S), con versiones y "deshacer" de macOS.
-- Vista dividida con el render actualizándose mientras escribes.
-- Exportación a HTML autocontenido (con estilos claro/oscuro) y "copiar como
-  HTML".
+### Editing
 
-## Compilar e instalar
+- A real text editor built on `NSTextView`: line numbers, Markdown syntax
+  highlighting, soft wrap and the system find bar (⌘F).
+- Smart quotes, dash substitution and text replacement are **switched off** —
+  they silently corrupt Markdown files.
+- Standard document behaviour: ⌘S, autosave, Versions and Revert To all come
+  from the system's document machinery.
+- Split view keeps the rendered output in sync as you type (parsing is
+  debounced, so typing stays smooth in long documents).
+
+### Around the app
+
+- **Export as HTML** — a self-contained file with light and dark styles — or
+  **Copy as HTML** for pasting into another app.
+- **Localised** in English and Spanish; the app follows your system language.
+- Opens `.md`, `.markdown`, `.mdown`, `.mkd`, `.mkdn`, `.mdwn`, `.mdtxt`,
+  `.mdtext`, `.qmd` and `.rmd`, and registers as an alternate handler for plain
+  text.
+- Reads UTF-8 and falls back to Latin-1, strips a leading BOM, normalises CRLF,
+  and writes the file back in its original encoding.
+
+## Screenshots
+
+| Syntax | Split view |
+|:------:|:----------:|
+| ![Syntax reference](docs/screenshots/syntax.png) | ![Split view](docs/screenshots/split-view.png) |
+
+The source view, with line numbers, Markdown highlighting and the outline:
+
+![The source view](docs/screenshots/source-view.png)
+
+Settings (⌘,):
+
+<img src="docs/screenshots/settings.png" width="420" alt="Settings window">
+
+## Installation
+
+Requirements: **macOS 14** or later to run, Xcode 16 (Swift 6 toolchain) or
+later to build.
 
 ```bash
+git clone <this repo> && cd MarkdownReader
 ./Scripts/build_app.sh --install
 ```
 
-Eso compila en modo release, arma `Markdown Reader.app`, la firma en modo
-ad-hoc y la copia a `/Applications`. Sin `--install` la deja en `build/`.
-Otras opciones: `--debug`, `--universal` (arm64 + x86_64).
+That compiles in release mode, assembles `Markdown Reader.app`, generates the
+icon, signs it ad-hoc and copies it to `/Applications`. Without `--install` the
+bundle is left in `build/`. Other flags: `--debug`, `--universal` (arm64 +
+x86_64).
 
-Para trabajar en el código:
+### Making it the default app for `.md`
 
-```bash
-swift build      # compilar
-swift test       # 24 tests del parser, el documento y la exportación
-```
+From the app: **Markdown Reader › Open .md files with Markdown Reader**, or the
+*Use this app* button in Settings. From the Finder: right-click any `.md` file →
+Get Info → *Open with* → Markdown Reader → *Change All*.
 
-## Ponerla como app por defecto
+> [!NOTE]
+> Install the app in `/Applications` before making it the default. If the
+> bundle lives on an external volume, the association breaks as soon as that
+> volume is unmounted.
 
-Desde la app: menú **Markdown Reader › Usar Markdown Reader para abrir los
-.md**, o el botón que hay en Ajustes (⌘,). También se puede hacer desde el
-Finder: clic derecho en un `.md` → Obtener información → *Abrir con* →
-Markdown Reader → *Cambiar todos*.
+## Keyboard shortcuts
 
-> Conviene instalarla en `/Applications` antes de fijarla como predeterminada:
-> si la app vive en un disco externo, la asociación se rompe al desmontarlo.
+| Action | Shortcut |
+|:-------|:---------|
+| Rendered view | ⌘1 |
+| Source code | ⌘2 |
+| Split view | ⌘3 |
+| Show/hide outline | ⌃⌘S |
+| Bigger / smaller text | ⌘+ / ⌘− |
+| Actual text size | ⌘0 |
+| Find in source | ⌘F |
+| Save | ⌘S |
+| Reveal in Finder | ⇧⌘R |
+| Settings | ⌘, |
 
-## Atajos
+## Supported syntax
 
-| Acción | Atajo |
-|:-------|:------|
-| Vista formateada | ⌘1 |
-| Código fuente | ⌘2 |
-| Vista dividida | ⌘3 |
-| Mostrar/ocultar índice | ⌃⌘S |
-| Aumentar / reducir texto | ⌘+ / ⌘− |
-| Tamaño original | ⌘0 |
-| Buscar (en el editor) | ⌘F |
-| Guardar | ⌘S |
-| Mostrar en el Finder | ⇧⌘R |
+| Element | Notes |
+|:--------|:------|
+| Headings | ATX (`#`) and Setext (`===`, `---`), with anchors derived from the text |
+| Emphasis | Bold, italic, strikethrough, inline code |
+| Lists | Ordered, unordered, arbitrarily nested, tight and loose spacing |
+| Task lists | `- [ ]` / `- [x]`, clickable in the rendered view |
+| Code | Fenced with a language hint, and 4-space indented |
+| Tables | GFM pipe tables, with `:---`, `:---:` and `---:` alignment |
+| Quotes | Nested blocks inside, plus GitHub callouts |
+| Links | Inline, reference, autolinks, internal anchors, relative file paths |
+| Images | Remote (`http`), absolute and document-relative paths |
+| Front matter | YAML between `---` fences, shown as a collapsible metadata box |
+| HTML | `<img>` becomes an image; other tags are stripped and the text is kept |
 
-## Cómo está montado
+Not supported yet: footnotes, definition lists, math, Mermaid diagrams and
+arbitrary inline HTML.
+
+## How it works
 
 ```
 Sources/MarkdownReader/
-  App/        punto de entrada, menús, ajustes, app por defecto
-  Model/      documento (FileDocument) y parser de bloques
-  Render/     tipografía, estilo inline y resaltado de código
-  Views/      vista formateada, editor y barra lateral
-  Export/     serialización a HTML
-AppResources/ Info.plist (tipos de documento) e icono
-Scripts/      build_app.sh y generador del icono
+  App/        entry point, menu commands, settings, default-app registration
+  Model/      the FileDocument and the block parser
+  Render/     typography, inline styling, code syntax highlighting
+  Views/      rendered view, source editor, outline sidebar
+  Export/     HTML serialisation
+AppResources/ Info.plist (document types), icon, .lproj strings
+Scripts/      build_app.sh and the icon generator
+Examples/     sample documents
+Tests/        parser, document and export tests
 ```
 
-El parseo va en dos capas: `MarkdownParser` resuelve la estructura de bloques
-(lo que Foundation no expone) y el marcado *inline* (negritas, enlaces, código)
-lo hace el parser de Markdown de Foundation dentro de `InlineRenderer`, que
-además resuelve referencias y autoenlaces.
+Parsing happens in two layers. `MarkdownParser` resolves **block** structure —
+the part Foundation does not expose — into a tree of `MDBlock` values, keeping
+the source line number of every node so the outline and the task checkboxes can
+map back to the file. **Inline** markup is handed to Foundation's own Markdown
+parser inside `InlineRenderer`, which then resolves reference links, detects
+bare URLs with `NSDataDetector` and applies the visual style run by run.
 
-Requisitos: macOS 14 o posterior.
+The rendered view is a `LazyVStack`, so only the visible blocks are built.
+Parsed inline strings and highlighted code blocks are cached in `NSCache`, and
+in split view the document is re-parsed off the main actor with a short debounce.
+
+The source editor is a TextKit 1 `NSTextView` wrapped in `NSViewRepresentable`,
+with a custom `NSRulerView` for line numbers and an `NSTextStorage` pass that
+styles the Markdown itself.
+
+## Development
+
+```bash
+swift build            # compile
+swift test             # 24 tests: parser, document round-trip, HTML export
+./Scripts/build_app.sh # build the .app bundle in build/
+```
+
+The package builds a plain executable; `Scripts/build_app.sh` is what turns it
+into a bundle — it copies `Info.plist`, the icon and the `.lproj` folders into
+`Markdown Reader.app`, signs it and registers it with Launch Services. The icon
+itself is generated by `Scripts/make_icon.swift` (Core Graphics, no image
+assets), so it is not checked in.
+
+**Adding a language to the highlighter**: add a `case` to `spec(for:)` in
+`Render/CodeHighlighter.swift` with its comment markers, quote characters and
+keyword set.
+
+**Adding a translation**: copy `AppResources/en.lproj/Localizable.strings` to
+`AppResources/<code>.lproj/`, translate the values, and add the language code to
+`CFBundleLocalizations` in `AppResources/Info.plist`. The build script picks up
+any `.lproj` folder automatically.
+
+## Roadmap
+
+- Scroll sync between the editor and the preview
+- Printing and PDF export
+- Footnotes and math
+- A presentation mode for reading long documents
