@@ -1,0 +1,17 @@
+## Compilación
+.build/
+build/
+DerivedData/
+
+## SwiftPM / Xcode
+.swiftpm/
+xcuserdata/
+*.xcuserstate
+
+## Generado por Scripts/make_icon.swift (build_app.sh lo recrea si falta)
+AppResources/AppIcon.iconset/
+AppResources/AppIcon.icns
+
+## macOS
+.DS_Store
+._*
