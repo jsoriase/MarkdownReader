@@ -34,12 +34,12 @@ enum DefaultApp {
             let alert = NSAlert()
             if let error {
                 alert.alertStyle = .warning
-                alert.messageText = "No se pudo cambiar la app por defecto"
+                alert.messageText = String(localized: "Could not change the default app")
                 alert.informativeText = error.localizedDescription
             } else {
                 alert.alertStyle = .informational
-                alert.messageText = "Markdown Reader ya es la app por defecto"
-                alert.informativeText = "Los ficheros .md se abrirán con Markdown Reader al hacer doble clic."
+                alert.messageText = String(localized: "Markdown Reader is now the default app")
+                alert.informativeText = String(localized: "Double-clicking a .md file will open it in Markdown Reader.")
             }
             alert.runModal()
         }

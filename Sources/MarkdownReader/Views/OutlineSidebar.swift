@@ -24,7 +24,7 @@ struct OutlineSidebar: View {
                     Image(systemName: "list.bullet.indent")
                         .font(.title2)
                         .foregroundStyle(.tertiary)
-                    Text("Sin títulos")
+                    Text("No headings")
                         .font(.callout)
                         .foregroundStyle(.secondary)
                 }
@@ -49,9 +49,9 @@ struct OutlineSidebar: View {
                     }
                 }
                 .listStyle(.sidebar)
-                .searchable(text: $filter, placement: .sidebar, prompt: "Filtrar títulos")
+                .searchable(text: $filter, placement: .sidebar, prompt: Text("Filter headings"))
             }
         }
-        .navigationTitle("Índice")
+        .navigationTitle("Outline")
     }
 }

@@ -90,9 +90,9 @@ struct EmptyDocumentHint: View {
             Image(systemName: "doc.text")
                 .font(.system(size: 34))
                 .foregroundStyle(.tertiary)
-            Text("Documento vacío")
+            Text("Empty document")
                 .font(.system(size: theme.baseSize * 1.2, weight: .semibold))
-            Text("Cambia a la vista de código (⌘2) para empezar a escribir.")
+            Text("Switch to the source view (⌘2) to start writing.")
                 .font(theme.smallFont)
                 .foregroundStyle(.secondary)
         }

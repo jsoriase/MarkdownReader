@@ -6,69 +6,69 @@ struct AppCommands: Commands {
 
     var body: some Commands {
         CommandGroup(after: .appSettings) {
-            Button("Usar Markdown Reader para abrir los .md") {
+            Button("Open .md files with Markdown Reader") {
                 DefaultApp.makeDefaultShowingResult()
             }
         }
 
         CommandGroup(replacing: .importExport) {
-            Button("Exportar como HTML…") { actions?.exportHTML() }
+            Button("Export as HTML…") { actions?.exportHTML() }
                 .disabled(actions == nil)
-            Button("Copiar como HTML") { actions?.copyHTML() }
+            Button("Copy as HTML") { actions?.copyHTML() }
                 .disabled(actions == nil)
             Divider()
-            Button("Mostrar en el Finder") { actions?.revealInFinder() }
+            Button("Reveal in Finder") { actions?.revealInFinder() }
                 .keyboardShortcut("r", modifiers: [.command, .shift])
                 .disabled(actions == nil)
         }
 
         CommandGroup(after: .toolbar) {
-            Button("Vista formateada") { actions?.mode.wrappedValue = .preview }
+            Button("Rendered view") { actions?.mode.wrappedValue = .preview }
                 .keyboardShortcut("1", modifiers: .command)
                 .disabled(actions == nil)
-            Button("Código fuente") { actions?.mode.wrappedValue = .source }
+            Button("Source code") { actions?.mode.wrappedValue = .source }
                 .keyboardShortcut("2", modifiers: .command)
                 .disabled(actions == nil)
-            Button("Vista dividida") { actions?.mode.wrappedValue = .split }
+            Button("Split view") { actions?.mode.wrappedValue = .split }
                 .keyboardShortcut("3", modifiers: .command)
                 .disabled(actions == nil)
 
             Divider()
 
-            Button(actions?.outlineVisible.wrappedValue == true ? "Ocultar índice" : "Mostrar índice") {
+            Button(actions?.outlineVisible.wrappedValue == true ? "Hide outline" : "Show outline") {
                 guard let actions else { return }
                 actions.outlineVisible.wrappedValue.toggle()
             }
             .keyboardShortcut("s", modifiers: [.command, .control])
             .disabled(actions == nil)
 
-            Toggle("Barra de estado", isOn: $settings.showStatusBar)
+            Toggle("Status bar", isOn: $settings.showStatusBar)
 
             Divider()
 
-            Button("Aumentar tamaño de texto") { settings.bumpPreviewFont(1) }
+            Button("Bigger text") { settings.bumpPreviewFont(1) }
                 .keyboardShortcut("+", modifiers: .command)
-            Button("Reducir tamaño de texto") { settings.bumpPreviewFont(-1) }
+            Button("Smaller text") { settings.bumpPreviewFont(-1) }
                 .keyboardShortcut("-", modifiers: .command)
-            Button("Tamaño de texto original") { settings.resetPreviewFont() }
+            Button("Actual text size") { settings.resetPreviewFont() }
                 .keyboardShortcut("0", modifiers: .command)
 
             Divider()
 
-            Picker("Apariencia", selection: $settings.appearance) {
+            Picker("Appearance", selection: $settings.appearance) {
                 ForEach(AppearanceMode.allCases) { Text($0.label).tag($0) }
             }
         }
 
         CommandMenu("Editor") {
-            Toggle("Números de línea", isOn: $settings.showLineNumbers)
-            Toggle("Ajustar líneas", isOn: $settings.softWrap)
-            Toggle("Resaltar sintaxis", isOn: $settings.highlightSource)
+            Toggle("Line numbers", isOn: $settings.showLineNumbers)
+            Toggle("Wrap lines", isOn: $settings.softWrap)
+            Toggle("Syntax highlighting", isOn: $settings.highlightSource)
             Divider()
-            Button("Aumentar tamaño del editor") {
+            Button("Bigger editor text") {
                 settings.editorFontSize = min(28, settings.editorFontSize + 1)
             }
-            Button("Reducir tamaño del editor") {
+            Button("Smaller editor text") {
                 settings.editorFontSize = max(9, settings.editorFontSize - 1)
             }
         }

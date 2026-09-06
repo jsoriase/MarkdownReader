@@ -142,7 +142,7 @@ struct CodeBlockView: View {
                     }
                     .buttonStyle(.plain)
                     .foregroundStyle(copied ? Color.green : Color.secondary)
-                    .help("Copiar código")
+                    .help("Copy code")
                 }
             }
             .padding(.horizontal, 10)
@@ -168,11 +168,11 @@ struct QuoteView: View {
     }
 
     private static let callouts: [String: (String, String, Color)] = [
-        "note": ("Nota", "info.circle.fill", .blue),
-        "tip": ("Consejo", "lightbulb.fill", .green),
-        "important": ("Importante", "exclamationmark.circle.fill", .purple),
-        "warning": ("Aviso", "exclamationmark.triangle.fill", .orange),
-        "caution": ("Precaución", "xmark.octagon.fill", .red)
+        "note": ("Note", "info.circle.fill", .blue),
+        "tip": ("Tip", "lightbulb.fill", .green),
+        "important": ("Important", "exclamationmark.circle.fill", .purple),
+        "warning": ("Warning", "exclamationmark.triangle.fill", .orange),
+        "caution": ("Caution", "xmark.octagon.fill", .red)
     ]
 
     private var parsed: (Callout?, [MDBlock]) {
@@ -203,7 +203,7 @@ struct QuoteView: View {
                 .frame(width: 3)
             VStack(alignment: .leading, spacing: theme.blockSpacing * 0.55) {
                 if let callout {
-                    Label(callout.title, systemImage: callout.symbol)
+                    Label(String(localized: String.LocalizationValue(callout.title)), systemImage: callout.symbol)
                         .font(.system(size: theme.baseSize * 0.88, weight: .semibold))
                         .foregroundStyle(callout.color)
                 }
@@ -261,7 +261,7 @@ struct ListBlockView: View {
             }
             .buttonStyle(.plain)
             .disabled(context.onToggleTask == nil || item.checkboxLine == nil)
-            .help("Marcar tarea")
+            .help("Toggle task")
         } else if list.ordered {
             Text("\(list.start + index).")
                 .font(.system(size: theme.baseSize * 0.95, design: theme.design))
@@ -361,7 +361,7 @@ struct MDImageView: View {
                         .frame(maxWidth: nsImage.size.width, alignment: .leading)
                         .clipShape(RoundedRectangle(cornerRadius: 6, style: .continuous))
                 } else {
-                    placeholder(symbol: "photo", text: "No se encontró \(url.lastPathComponent)")
+                    placeholder(symbol: "photo", text: String(format: String(localized: "Not found: %@"), url.lastPathComponent))
                 }
             } else {
                 AsyncImage(url: url) { phase in
@@ -373,7 +373,7 @@ struct MDImageView: View {
                     case .failure:
                         placeholder(symbol: "photo.badge.exclamationmark", text: image.source)
                     default:
-                        placeholder(symbol: "photo", text: "Cargando…")
+                        placeholder(symbol: "photo", text: String(localized: "Loading…"))
                     }
                 }
             }
@@ -436,7 +436,7 @@ struct FrontMatterView: View {
         } label: {
             HStack(spacing: 6) {
                 Image(systemName: "list.bullet.rectangle")
-                Text("Metadatos")
+                Text("Metadata")
                 if let title = pairs.first(where: { $0.key.lowercased() == "title" })?.value, !expanded {
                     Text("· \(title)").foregroundStyle(.secondary)
                 }

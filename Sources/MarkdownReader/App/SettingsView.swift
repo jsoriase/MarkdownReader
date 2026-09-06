@@ -8,33 +8,33 @@ struct SettingsView: View {
     var body: some View {
         TabView {
             reading
-                .tabItem { Label("Lectura", systemImage: "doc.richtext") }
+                .tabItem { Label("Reading", systemImage: "doc.richtext") }
             editing
                 .tabItem { Label("Editor", systemImage: "chevron.left.forwardslash.chevron.right") }
         }
-        .frame(width: 460)
+        .frame(width: 470, height: 500)
     }
 
     private var reading: some View {
         Form {
             Section {
-                Picker("Tipografía:", selection: $settings.previewFont) {
+                Picker("Typeface:", selection: $settings.previewFont) {
                     ForEach(PreviewFont.allCases) { Text($0.label).tag($0) }
                 }
                 HStack {
                     Slider(value: $settings.previewFontSize, in: 11...28, step: 1) {
-                        Text("Tamaño:")
+                        Text("Size:")
                     }
                     Text("\(Int(settings.previewFontSize)) pt")
                         .monospacedDigit()
                         .foregroundStyle(.secondary)
                         .frame(width: 46, alignment: .trailing)
                 }
-                Picker("Ancho del texto:", selection: $settings.contentWidth) {
-                    Text("Estrecho (620)").tag(620.0)
+                Picker("Text width:", selection: $settings.contentWidth) {
+                    Text("Narrow (620)").tag(620.0)
                     Text("Normal (760)").tag(760.0)
-                    Text("Ancho (960)").tag(960.0)
-                    Text("Ocupar la ventana").tag(0.0)
+                    Text("Wide (960)").tag(960.0)
+                    Text("Fill the window").tag(0.0)
                 }
             }
 
@@ -42,14 +42,14 @@ struct SettingsView: View {
                 HStack {
                     VStack(alignment: .leading, spacing: 2) {
                         Text(isDefaultApp
-                             ? "Markdown Reader abre los ficheros .md"
-                             : "Otra app abre los ficheros .md")
-                        Text("Afecta al doble clic en el Finder.")
+                             ? "Markdown Reader opens .md files"
+                             : "Another app opens .md files")
+                        Text("Applies when you double-click a file in the Finder.")
                             .font(.caption)
                             .foregroundStyle(.secondary)
                     }
                     Spacer()
-                    Button("Usar esta app") {
+                    Button("Use this app") {
                         DefaultApp.makeDefault { _ in isDefaultApp = DefaultApp.isDefault }
                     }
                     .disabled(isDefaultApp)
@@ -57,17 +57,17 @@ struct SettingsView: View {
             }
 
             Section {
-                Picker("Apariencia:", selection: $settings.appearance) {
+                Picker("Appearance:", selection: $settings.appearance) {
                     ForEach(AppearanceMode.allCases) { Text($0.label).tag($0) }
                 }
-                Picker("Al abrir un documento:", selection: $settings.defaultMode) {
+                Picker("Open documents in:", selection: $settings.defaultMode) {
                     ForEach(ViewMode.allCases) { Text($0.label).tag($0) }
                 }
-                Toggle("Mostrar barra de estado", isOn: $settings.showStatusBar)
+                Toggle("Show status bar", isOn: $settings.showStatusBar)
             }
 
             Section {
-                Text("Vista previa")
+                Text("Preview")
                     .font(.caption)
                     .foregroundStyle(.secondary)
                 Text(sampleText)
@@ -86,18 +86,18 @@ struct SettingsView: View {
             Section {
                 HStack {
                     Slider(value: $settings.editorFontSize, in: 9...24, step: 1) {
-                        Text("Tamaño:")
+                        Text("Size:")
                     }
                     Text("\(Int(settings.editorFontSize)) pt")
                         .monospacedDigit()
                         .foregroundStyle(.secondary)
                         .frame(width: 46, alignment: .trailing)
                 }
-                Toggle("Números de línea", isOn: $settings.showLineNumbers)
-                Toggle("Ajustar líneas largas", isOn: $settings.softWrap)
-                Toggle("Resaltar la sintaxis Markdown", isOn: $settings.highlightSource)
+                Toggle("Line numbers", isOn: $settings.showLineNumbers)
+                Toggle("Wrap long lines", isOn: $settings.softWrap)
+                Toggle("Highlight Markdown syntax", isOn: $settings.highlightSource)
             } footer: {
-                Text("Las comillas tipográficas y las sustituciones automáticas están siempre desactivadas para no alterar el Markdown.")
+                Text("Smart quotes and other automatic substitutions are always off, so the Markdown is never altered.")
                     .font(.caption)
                     .foregroundStyle(.secondary)
             }
@@ -106,5 +106,5 @@ struct SettingsView: View {
         .padding(.vertical, 4)
     }
 
-    private let sampleText = "El zorro marrón salta sobre el perro perezoso."
+    private let sampleText = String(localized: "The quick brown fox jumps over the lazy dog.")
 }

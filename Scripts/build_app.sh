@@ -43,6 +43,9 @@ mkdir -p "$APP/Contents/MacOS" "$APP/Contents/Resources"
 cp "$BIN" "$APP/Contents/MacOS/MarkdownReader"
 cp "$ROOT/AppResources/Info.plist" "$APP/Contents/Info.plist"
 cp "$ROOT/AppResources/AppIcon.icns" "$APP/Contents/Resources/AppIcon.icns"
+for lproj in "$ROOT"/AppResources/*.lproj; do
+  [ -d "$lproj" ] && cp -R "$lproj" "$APP/Contents/Resources/"
+done
 printf 'APPL????' > "$APP/Contents/PkgInfo"
 
 echo "==> Firmando (ad-hoc)"

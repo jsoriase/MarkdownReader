@@ -52,7 +52,7 @@ struct ContentView: View {
             }
             .frame(minWidth: 420, minHeight: 320)
         }
-        .navigationTitle(fileURL?.lastPathComponent ?? "Sin título")
+        .navigationTitle(fileURL?.lastPathComponent ?? String(localized: "Untitled"))
         .navigationSubtitle(subtitle)
         .toolbar { toolbarContent }
         .preferredColorScheme(settings.appearance.colorScheme)
@@ -110,7 +110,9 @@ struct ContentView: View {
 
     private var subtitle: String {
         let words = document.wordCount
-        return words == 0 ? "" : "\(words) palabras · \(document.readingMinutes) min"
+        guard words > 0 else { return "" }
+        return String(format: String(localized: "%@ words · %@ min"),
+                      words.formatted(), document.readingMinutes.formatted())
     }
 
     // MARK: - Barra de herramientas
@@ -118,37 +120,37 @@ struct ContentView: View {
     @ToolbarContentBuilder
     private var toolbarContent: some ToolbarContent {
         ToolbarItem(placement: .principal) {
-            Picker("Modo", selection: $mode) {
+            Picker("View mode", selection: $mode) {
                 ForEach(ViewMode.allCases) { item in
                     Label(item.label, systemImage: item.symbol).tag(item)
                 }
             }
             .pickerStyle(.segmented)
             .labelStyle(.iconOnly)
-            .help("Vista formateada, código fuente o ambas")
+            .help("Rendered view, source code, or both")
         }
 
         ToolbarItem(placement: .primaryAction) {
             Menu {
-                Button("Aumentar texto") { settings.bumpPreviewFont(1) }
-                Button("Reducir texto") { settings.bumpPreviewFont(-1) }
-                Button("Tamaño original") { settings.resetPreviewFont() }
+                Button("Bigger text") { settings.bumpPreviewFont(1) }
+                Button("Smaller text") { settings.bumpPreviewFont(-1) }
+                Button("Actual size") { settings.resetPreviewFont() }
                 Divider()
-                Picker("Tipografía", selection: $settings.previewFont) {
+                Picker("Typeface", selection: $settings.previewFont) {
                     ForEach(PreviewFont.allCases) { Text($0.label).tag($0) }
                 }
-                Picker("Ancho", selection: $settings.contentWidth) {
-                    Text("Estrecho").tag(620.0)
+                Picker("Width", selection: $settings.contentWidth) {
+                    Text("Narrow").tag(620.0)
                     Text("Normal").tag(760.0)
-                    Text("Ancho").tag(960.0)
-                    Text("Completo").tag(0.0)
+                    Text("Wide").tag(960.0)
+                    Text("Full width").tag(0.0)
                 }
                 Divider()
-                Toggle("Barra de estado", isOn: $settings.showStatusBar)
+                Toggle("Status bar", isOn: $settings.showStatusBar)
             } label: {
-                Label("Presentación", systemImage: "textformat.size")
+                Label("Appearance", systemImage: "textformat.size")
             }
-            .help("Ajustes de lectura")
+            .help("Reading settings")
         }
     }
 
@@ -170,16 +172,17 @@ struct ContentView: View {
     private func exportHTML() {
         let panel = NSSavePanel()
         panel.allowedContentTypes = [.html]
-        panel.nameFieldStringValue = (fileURL?.deletingPathExtension().lastPathComponent ?? "documento") + ".html"
+        panel.nameFieldStringValue = (fileURL?.deletingPathExtension().lastPathComponent
+                                      ?? String(localized: "document")) + ".html"
         panel.canCreateDirectories = true
         guard panel.runModal() == .OK, let url = panel.url else { return }
-        let title = fileURL?.deletingPathExtension().lastPathComponent ?? "Documento"
+        let title = fileURL?.deletingPathExtension().lastPathComponent ?? String(localized: "Document")
         let html = HTMLExporter.export(parsed, title: title)
         try? html.data(using: .utf8)?.write(to: url)
     }
 
     private func copyHTML() {
-        let title = fileURL?.deletingPathExtension().lastPathComponent ?? "Documento"
+        let title = fileURL?.deletingPathExtension().lastPathComponent ?? String(localized: "Document")
         let html = HTMLExporter.export(parsed, title: title, fragmentOnly: true)
         NSPasteboard.general.clearContents()
         NSPasteboard.general.setString(html, forType: .string)
@@ -207,13 +210,13 @@ struct StatusBar: View {
                     .truncationMode(.middle)
             }
             Spacer()
-            Text("\(document.lineCount) líneas")
-            Text("\(document.wordCount) palabras")
-            Text("\(document.text.count) caracteres")
+            Text(count("%@ lines", document.lineCount))
+            Text(count("%@ words", document.wordCount))
+            Text(count("%@ characters", document.text.count))
             if !parsed.headings.isEmpty {
-                Text("\(parsed.headings.count) títulos")
+                Text(count("%@ headings", parsed.headings.count))
             }
-            Label("\(document.readingMinutes) min", systemImage: "clock")
+            Label(count("%@ min", document.readingMinutes), systemImage: "clock")
         }
         .font(.system(size: 11))
         .foregroundStyle(.secondary)
@@ -221,5 +224,9 @@ struct StatusBar: View {
         .padding(.vertical, 5)
         .frame(maxWidth: .infinity)
         .background(.bar)
+    }
+
+    private func count(_ key: String.LocalizationValue, _ value: Int) -> String {
+        String(format: String(localized: key), value.formatted())
     }
 }

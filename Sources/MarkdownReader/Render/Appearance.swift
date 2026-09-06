@@ -6,9 +6,9 @@ enum ViewMode: String, CaseIterable, Identifiable {
 
     var label: String {
         switch self {
-        case .preview: return "Vista"
-        case .source: return "Código"
-        case .split: return "Dividido"
+        case .preview: return String(localized: "Preview")
+        case .source: return String(localized: "Source")
+        case .split: return String(localized: "Split")
         }
     }
 
@@ -27,10 +27,10 @@ enum PreviewFont: String, CaseIterable, Identifiable {
 
     var label: String {
         switch self {
-        case .system: return "Sistema"
-        case .serif: return "Serif"
-        case .rounded: return "Redondeada"
-        case .mono: return "Monoespaciada"
+        case .system: return String(localized: "System")
+        case .serif: return String(localized: "Serif")
+        case .rounded: return String(localized: "Rounded")
+        case .mono: return String(localized: "Monospaced")
         }
     }
 
@@ -50,9 +50,9 @@ enum AppearanceMode: String, CaseIterable, Identifiable {
 
     var label: String {
         switch self {
-        case .system: return "Automático"
-        case .light: return "Claro"
-        case .dark: return "Oscuro"
+        case .system: return String(localized: "Automatic")
+        case .light: return String(localized: "Light")
+        case .dark: return String(localized: "Dark")
         }
     }
 
