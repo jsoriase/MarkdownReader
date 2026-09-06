@@ -1,27 +1,27 @@
-/* Modos de vista */
+/* View modes */
 "Preview" = "Vista";
 "Source" = "Código";
 "Split" = "Dividido";
 
-/* Tipografías */
+/* Typefaces */
 "System" = "Sistema";
 "Serif" = "Serif";
 "Rounded" = "Redondeada";
 "Monospaced" = "Monoespaciada";
 
-/* Apariencia */
+/* Appearance */
 "Automatic" = "Automático";
 "Light" = "Claro";
 "Dark" = "Oscuro";
 
-/* Avisos estilo GitHub */
+/* GitHub-style callouts */
 "Note" = "Nota";
 "Tip" = "Consejo";
 "Important" = "Importante";
 "Warning" = "Aviso";
 "Caution" = "Precaución";
 
-/* Vista formateada */
+/* Rendered view */
 "Copy code" = "Copiar código";
 "Toggle task" = "Marcar tarea";
 "Metadata" = "Metadatos";
@@ -30,12 +30,12 @@
 "Empty document" = "Documento vacío";
 "Switch to the source view (⌘2) to start writing." = "Cambia a la vista de código (⌘2) para empezar a escribir.";
 
-/* Índice */
+/* Outline */
 "Outline" = "Índice";
 "No headings" = "Sin títulos";
 "Filter headings" = "Filtrar títulos";
 
-/* Ventana */
+/* Window */
 "Untitled" = "Sin título";
 "document" = "documento";
 "Document" = "Documento";
@@ -49,7 +49,7 @@
 "%@ headings" = "%@ títulos";
 "%@ min" = "%@ min";
 
-/* Menús y barra de herramientas */
+/* Menus and toolbar */
 "Bigger text" = "Aumentar texto";
 "Smaller text" = "Reducir texto";
 "Actual size" = "Tamaño original";
@@ -78,7 +78,7 @@
 "Bigger editor text" = "Aumentar tamaño del editor";
 "Smaller editor text" = "Reducir tamaño del editor";
 
-/* Ajustes */
+/* Settings */
 "Reading" = "Lectura";
 "Typeface:" = "Tipografía:";
 "Size:" = "Tamaño:";
@@ -100,7 +100,7 @@
 "Applies when you double-click a file in the Finder." = "Afecta al doble clic en el Finder.";
 "Use this app" = "Usar esta app";
 
-/* Avisos */
+/* Alerts */
 "Could not change the default app" = "No se pudo cambiar la app por defecto";
 "Markdown Reader is now the default app" = "Markdown Reader ya es la app por defecto";
 "Double-clicking a .md file will open it in Markdown Reader." = "Los ficheros .md se abrirán con Markdown Reader al hacer doble clic.";

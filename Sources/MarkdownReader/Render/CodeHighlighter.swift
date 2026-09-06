@@ -1,8 +1,8 @@
 import SwiftUI
 
-/// Resaltado de sintaxis ligero para los bloques de código.
-/// No pretende ser un analizador completo: reconoce comentarios, cadenas,
-/// números y palabras clave, que es el 90 % del valor visual.
+/// Lightweight syntax highlighting for fenced code blocks.
+/// It is not meant to be a real parser: it recognises comments, strings,
+/// numbers and keywords, which is 90 % of the visual value.
 enum CodeHighlighter {
 
     struct Palette {
@@ -49,7 +49,7 @@ enum CodeHighlighter {
         var keyValue = false
     }
 
-    // MARK: - Caché
+    // MARK: - Cache
 
     private final class Box {
         let value: AttributedString
@@ -101,7 +101,7 @@ enum CodeHighlighter {
         return names[lang.lowercased()] ?? lang
     }
 
-    // MARK: - Lenguajes
+    // MARK: - Languages
 
     private static func normalize(_ language: String?) -> String? {
         guard var l = language?.lowercased().trimmingCharacters(in: .whitespaces), !l.isEmpty else { return nil }
@@ -168,7 +168,7 @@ enum CodeHighlighter {
         }
     }
 
-    // MARK: - Tokenizador
+    // MARK: - Tokenizer
 
     private static func tokenize(_ code: String, spec: Spec, palette: Palette) -> AttributedString {
         var out = AttributedString()
@@ -198,7 +198,7 @@ enum CodeHighlighter {
         while i < chars.count {
             let ch = chars[i]
 
-            // Comentario de bloque
+            // Block comment
             if let block = spec.blockComment, matches(block.open, at: i) {
                 var j = i + block.open.count
                 while j < chars.count, !matches(block.close, at: j) { j += 1 }
@@ -209,7 +209,7 @@ enum CodeHighlighter {
                 continue
             }
 
-            // Comentario de línea
+            // Line comment
             if spec.lineComments.contains(where: { matches($0, at: i) }) {
                 var j = i
                 while j < chars.count, chars[j] != "\n" { j += 1 }
@@ -218,7 +218,7 @@ enum CodeHighlighter {
                 continue
             }
 
-            // Marcado tipo HTML
+            // HTML-like markup
             if spec.markup, ch == "<" {
                 var j = i + 1
                 while j < chars.count, chars[j] != ">" { j += 1 }
@@ -229,7 +229,7 @@ enum CodeHighlighter {
                 continue
             }
 
-            // Cadenas
+            // Strings
             if spec.quotes.contains(ch) {
                 var j = i + 1
                 var escaped = false
@@ -254,7 +254,7 @@ enum CodeHighlighter {
                 continue
             }
 
-            // Números
+            // Numbers
             if ch.isNumber, i == 0 || !(chars[i - 1].isLetter || chars[i - 1] == "_") {
                 var j = i
                 while j < chars.count, chars[j].isHexDigit || chars[j] == "." || chars[j] == "x" || chars[j] == "_" { j += 1 }
@@ -264,7 +264,7 @@ enum CodeHighlighter {
                 continue
             }
 
-            // Identificadores
+            // Identifiers
             if ch.isLetter || ch == "_" || ch == "$" || ch == "@" || ch == "#" {
                 var j = i
                 while j < chars.count, chars[j].isLetter || chars[j].isNumber || chars[j] == "_" || chars[j] == "$" || chars[j] == "@" || chars[j] == "#" || (chars[j] == "-" && spec.keyValue) { j += 1 }

@@ -1,14 +1,14 @@
 import Foundation
 
-/// Una línea del fichero original, conservando su número para poder
-/// mapear elementos renderizados de vuelta al texto fuente.
+/// A line of the original file, keeping its number so that rendered elements
+/// can be mapped back to the source text.
 struct SrcLine {
     let number: Int
     let text: String
 }
 
 struct MDHeading: Identifiable, Hashable {
-    let id: String      // slug único, usado como ancla de scroll
+    let id: String      // unique slug, used as the scroll anchor
     let level: Int
     let markdown: String
     let plain: String
@@ -92,7 +92,7 @@ indirect enum MDBlock: Identifiable {
 struct MDDocument {
     var blocks: [MDBlock] = []
     var headings: [MDHeading] = []
-    /// Definiciones de enlaces por referencia: `[etiqueta]: url "título"`
+    /// Reference link definitions: `[label]: url "title"`
     var linkDefinitions: [String: String] = [:]
 
     static let empty = MDDocument()

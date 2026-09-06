@@ -1,9 +1,9 @@
 #!/bin/bash
-# Compila MarkdownReader y arma el bundle .app.
+# Builds MarkdownReader and assembles the .app bundle.
 #   ./Scripts/build_app.sh              -> build/Markdown Reader.app (release)
-#   ./Scripts/build_app.sh --debug      -> compilación de depuración
-#   ./Scripts/build_app.sh --universal  -> binario arm64 + x86_64
-#   ./Scripts/build_app.sh --install    -> además lo copia a /Applications
+#   ./Scripts/build_app.sh --debug      -> debug build
+#   ./Scripts/build_app.sh --universal  -> arm64 + x86_64 binary
+#   ./Scripts/build_app.sh --install    -> also copies it to /Applications
 set -euo pipefail
 
 ROOT="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
@@ -19,25 +19,25 @@ for arg in "$@"; do
     --release) CONFIG=release ;;
     --install) INSTALL=1 ;;
     --universal) ARCH_FLAGS=(--arch arm64 --arch x86_64) ;;
-    *) echo "Opción desconocida: $arg" >&2; exit 1 ;;
+    *) echo "Unknown option: $arg" >&2; exit 1 ;;
   esac
 done
 
 APP_NAME="Markdown Reader"
 APP="$ROOT/build/$APP_NAME.app"
 
-echo "==> Compilando ($CONFIG)"
+echo "==> Building ($CONFIG)"
 ARCHS=("${ARCH_FLAGS[@]+"${ARCH_FLAGS[@]}"}")
 swift build -c "$CONFIG" ${ARCHS[@]+"${ARCHS[@]}"}
 BIN="$(swift build -c "$CONFIG" ${ARCHS[@]+"${ARCHS[@]}"} --show-bin-path)/MarkdownReader"
 
 if [ ! -f "$ROOT/AppResources/AppIcon.icns" ]; then
-  echo "==> Generando icono"
+  echo "==> Generating icon"
   swift "$ROOT/Scripts/make_icon.swift" "$ROOT/AppResources/AppIcon.iconset" >/dev/null
   iconutil -c icns "$ROOT/AppResources/AppIcon.iconset" -o "$ROOT/AppResources/AppIcon.icns"
 fi
 
-echo "==> Montando $APP_NAME.app"
+echo "==> Assembling $APP_NAME.app"
 rm -rf "$APP"
 mkdir -p "$APP/Contents/MacOS" "$APP/Contents/Resources"
 cp "$BIN" "$APP/Contents/MacOS/MarkdownReader"
@@ -48,11 +48,11 @@ for lproj in "$ROOT"/AppResources/*.lproj; do
 done
 printf 'APPL????' > "$APP/Contents/PkgInfo"
 
-echo "==> Firmando (ad-hoc)"
+echo "==> Signing (ad-hoc)"
 codesign --force --sign - --identifier com.haumealabs.MarkdownReader "$APP" >/dev/null
 
 if [ "$INSTALL" = "1" ]; then
-  echo "==> Instalando en /Applications"
+  echo "==> Installing into /Applications"
   rm -rf "/Applications/$APP_NAME.app"
   cp -R "$APP" "/Applications/$APP_NAME.app"
   APP="/Applications/$APP_NAME.app"
@@ -60,4 +60,4 @@ fi
 
 /System/Library/Frameworks/CoreServices.framework/Frameworks/LaunchServices.framework/Support/lsregister -f "$APP" || true
 
-echo "==> Listo: $APP"
+echo "==> Done: $APP"

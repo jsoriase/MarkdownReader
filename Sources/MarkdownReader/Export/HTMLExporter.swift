@@ -1,6 +1,6 @@
 import Foundation
 
-/// Serializa el documento parseado a HTML autocontenido.
+/// Serialises the parsed document into self-contained HTML.
 enum HTMLExporter {
 
     static func export(_ document: MDDocument, title: String, fragmentOnly: Bool = false) -> String {
@@ -27,7 +27,7 @@ enum HTMLExporter {
         """
     }
 
-    // MARK: - Bloques
+    // MARK: - Blocks
 
     private static func html(for block: MDBlock, links: [String: String]) -> String {
         switch block {

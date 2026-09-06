@@ -1,6 +1,6 @@
 import SwiftUI
 
-/// Acciones de la ventana activa, expuestas a los menús.
+/// Actions of the frontmost window, exposed to the menu commands.
 struct DocumentActions {
     var mode: Binding<ViewMode>
     var outlineVisible: Binding<Bool>
@@ -72,7 +72,7 @@ struct ContentView: View {
         ))
     }
 
-    // MARK: - Contenido
+    // MARK: - Content
 
     @ViewBuilder
     private var content: some View {
@@ -115,7 +115,7 @@ struct ContentView: View {
                       words.formatted(), document.readingMinutes.formatted())
     }
 
-    // MARK: - Barra de herramientas
+    // MARK: - Toolbar
 
     @ToolbarContentBuilder
     private var toolbarContent: some ToolbarContent {
@@ -154,7 +154,7 @@ struct ContentView: View {
         }
     }
 
-    // MARK: - Acciones
+    // MARK: - Actions
 
     private func reparse() async {
         let text = document.text
@@ -194,7 +194,7 @@ struct ContentView: View {
     }
 }
 
-// MARK: - Barra de estado
+// MARK: - Status bar
 
 struct StatusBar: View {
     let document: MarkdownDocument

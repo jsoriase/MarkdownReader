@@ -1,9 +1,9 @@
 import AppKit
 import SwiftUI
 
-/// Editor de texto plano sobre `NSTextView` (TextKit 1) con numeración de
-/// líneas, resaltado del propio Markdown y las sustituciones automáticas
-/// desactivadas: comillas tipográficas o guiones largos romperían el fichero.
+/// Plain text editor built on `NSTextView` (TextKit 1), with line numbers,
+/// Markdown syntax highlighting and automatic substitutions switched off:
+/// smart quotes or em dashes would corrupt the file.
 struct SourceEditor: NSViewRepresentable {
     @Binding var text: String
     var fontSize: Double
@@ -15,9 +15,9 @@ struct SourceEditor: NSViewRepresentable {
     func makeCoordinator() -> Coordinator { Coordinator(self) }
 
     func makeNSView(context: Context) -> NSScrollView {
-        // TextKit 1: el text view crea y retiene su propio stack (storage,
-        // layout manager y contenedor), que es lo que necesitan la regla de
-        // números de línea y el resaltado por atributos.
+        // TextKit 1: the text view creates and retains its own stack (storage,
+        // layout manager and container), which is what the line number ruler
+        // and the attribute-based highlighting need.
         let textView = NSTextView(usingTextLayoutManager: false)
         textView.delegate = context.coordinator
         textView.isRichText = false
@@ -168,12 +168,9 @@ struct SourceEditor: NSViewRepresentable {
             syncWidth()
         }
 
-        /// Mantiene el ancho del `NSTextView` igual al del área visible cuando
-        /// el ajuste de línea está activo (el autoresizing falla si la vista
-        /// nace con ancho cero dentro de SwiftUI).
-        /// El text view puede acabar con un origen negativo dentro del clip view
-        /// (crece en vertical antes de que SwiftUI le dé tamaño). Lo devolvemos
-        /// al origen y dejamos el scroll arriba del todo.
+        /// The text view can end up with a negative origin inside the clip
+        /// view (it grows vertically before SwiftUI gives it a size). Put it
+        /// back at the origin and leave the scroll position at the top.
         func normalizeOrigin() {
             guard let textView, let clip = textView.enclosingScrollView?.contentView else { return }
             if textView.frame.origin.y != 0 {
@@ -186,12 +183,15 @@ struct SourceEditor: NSViewRepresentable {
             ruler?.needsDisplay = true
         }
 
+        /// Keeps the `NSTextView` as wide as the visible area while soft wrap
+        /// is on: autoresizing misbehaves when the view is born zero-width
+        /// inside SwiftUI.
         func syncWidth() {
             guard currentWrap != false,
                   let textView,
                   let clip = textView.enclosingScrollView?.contentView else { return }
-            // `bounds.maxX` descuenta el ancho de la regla, que desplaza el
-            // origen del clip view hacia la izquierda.
+            // `bounds.maxX` accounts for the ruler, which shifts the clip
+            // view's origin to the left.
             let width = clip.bounds.maxX
             guard width > 0, abs(textView.frame.width - width) > 0.5 else { return }
             textView.frame.size.width = width
@@ -241,7 +241,7 @@ struct SourceEditor: NSViewRepresentable {
     }
 }
 
-/// Regla lateral con los números de línea.
+/// Side ruler that draws the line numbers.
 final class LineNumberRuler: NSRulerView {
     var font: NSFont = .monospacedDigitSystemFont(ofSize: 11, weight: .regular) {
         didSet { needsDisplay = true }
@@ -258,7 +258,7 @@ final class LineNumberRuler: NSRulerView {
                                                object: scrollView.contentView)
     }
 
-    required init(coder: NSCoder) { fatalError("no soportado") }
+    required init(coder: NSCoder) { fatalError("not supported") }
 
     deinit {
         NotificationCenter.default.removeObserver(self)
@@ -272,8 +272,8 @@ final class LineNumberRuler: NSRulerView {
               let container = textView.textContainer,
               let scrollView else { return }
 
-        // Ojo: `rect` puede ser mucho mayor que la regla (AppKit lo pasa con el
-        // área sucia completa), así que todo se pinta acotado a `bounds`.
+        // Careful: `rect` can be far larger than the ruler (AppKit passes the
+        // whole dirty area), so everything is drawn clamped to `bounds`.
         let area = bounds.intersection(rect)
         guard !area.isEmpty else { return }
 

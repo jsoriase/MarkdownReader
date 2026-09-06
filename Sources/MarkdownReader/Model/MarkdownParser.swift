@@ -1,10 +1,10 @@
 import Foundation
 
-/// Parser de bloques Markdown (CommonMark + extensiones GFM más habituales).
+/// Markdown block parser (CommonMark plus the most common GFM extensions).
 ///
-/// El parseo *inline* (negritas, enlaces, código…) se delega en el parser de
-/// Foundation dentro de `InlineRenderer`; aquí sólo se resuelve la estructura
-/// de bloques, que es lo que Foundation no expone de forma cómoda.
+/// *Inline* parsing (bold, links, code…) is delegated to Foundation's parser
+/// inside `InlineRenderer`; this type only resolves block structure, which is
+/// the part Foundation does not expose in a usable way.
 final class MarkdownParser {
 
     private var counter = 0
@@ -42,7 +42,7 @@ final class MarkdownParser {
         return doc
     }
 
-    // MARK: - Front matter (YAML sencillo)
+    // MARK: - Front matter (simple YAML)
 
     private func frontMatter(_ lines: [SrcLine]) -> ([MDPair], Int)? {
         guard let first = lines.first, first.text.trimmingCharacters(in: .whitespaces) == "---" else { return nil }
@@ -67,7 +67,7 @@ final class MarkdownParser {
         return nil
     }
 
-    // MARK: - Bloques
+    // MARK: - Blocks
 
     private func parseBlocks(_ lines: [SrcLine]) -> [MDBlock] {
         var blocks: [MDBlock] = []
@@ -77,7 +77,7 @@ final class MarkdownParser {
             let line = lines[i]
             if Self.isBlank(line.text) { i += 1; continue }
 
-            // Definición de enlace por referencia
+            // Reference link definition
             if let def = Self.linkDefinition(line.text) {
                 linkDefs[def.0] = def.1
                 i += 1
@@ -124,7 +124,7 @@ final class MarkdownParser {
                         inner.append(SrcLine(number: l.number, text: stripped))
                         i += 1
                     } else if !Self.isBlank(l.text), !Self.startsBlock(l.text), Self.marker(l.text) == nil {
-                        // continuación perezosa
+                        // lazy continuation
                         inner.append(SrcLine(number: l.number, text: l.text))
                         i += 1
                     } else {
@@ -145,7 +145,7 @@ final class MarkdownParser {
                 while i < lines.count {
                     let l = lines[i]
                     if Self.isBlank(l.text) {
-                        // sólo continúa si después sigue habiendo código indentado
+                        // only keep going if more indented code follows
                         var j = i
                         while j < lines.count, Self.isBlank(lines[j].text) { j += 1 }
                         if j < lines.count, Self.indent(lines[j].text) >= 4 {
@@ -185,7 +185,7 @@ final class MarkdownParser {
                 continue
             }
 
-            // Párrafo (o título setext)
+            // Paragraph (or setext heading)
             var buf: [SrcLine] = []
             var madeHeading = false
             while i < lines.count {
@@ -224,7 +224,7 @@ final class MarkdownParser {
         return blocks
     }
 
-    // MARK: - Listas
+    // MARK: - Lists
 
     private func parseList(_ lines: [SrcLine], _ i: inout Int) -> MDList {
         let first = Self.marker(lines[i].text)!
@@ -301,7 +301,7 @@ final class MarkdownParser {
                       tight: !loose, items: items)
     }
 
-    // MARK: - Tablas
+    // MARK: - Tables
 
     private func parseTable(_ lines: [SrcLine], _ i: inout Int) -> MDTable {
         let header = Self.splitRow(lines[i].text)
@@ -330,7 +330,7 @@ final class MarkdownParser {
         return MDTable(id: nextID("table"), header: header, alignments: aligns, rows: rows)
     }
 
-    // MARK: - Utilidades
+    // MARK: - Helpers
 
     private func nextID(_ prefix: String) -> String {
         counter += 1
@@ -352,7 +352,7 @@ final class MarkdownParser {
         }
         while base.contains("--") { base = base.replacingOccurrences(of: "--", with: "-") }
         base = base.trimmingCharacters(in: CharacterSet(charactersIn: "-"))
-        if base.isEmpty { base = "seccion" }
+        if base.isEmpty { base = "section" }
         let n = slugCounts[base, default: 0]
         slugCounts[base] = n + 1
         return n == 0 ? base : "\(base)-\(n)"
@@ -496,7 +496,7 @@ final class MarkdownParser {
         return make(width: digits.count + 1, after: after, ordered: true, number: Int(digits) ?? 1)
     }
 
-    /// ¿La línea abre un bloque distinto a un párrafo?
+    /// Does this line open a block other than a paragraph?
     static func startsBlock(_ s: String) -> Bool {
         if fence(s) != nil { return true }
         if atx(s) != nil { return true }

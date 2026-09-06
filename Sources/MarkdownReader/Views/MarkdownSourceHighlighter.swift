@@ -1,6 +1,6 @@
 import AppKit
 
-/// Resaltado del Markdown en la vista de código fuente.
+/// Markdown highlighting for the source view.
 enum MarkdownSourceHighlighter {
 
     private static func regex(_ pattern: String) -> NSRegularExpression? {

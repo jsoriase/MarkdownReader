@@ -1,8 +1,7 @@
 import AppKit
 import UniformTypeIdentifiers
 
-/// Gestiona el registro de la app como visor por defecto de los ficheros
-/// Markdown del usuario.
+/// Registers the app as the user's default viewer for Markdown files.
 enum DefaultApp {
 
     static let types: [UTType] = [.markdown]
@@ -28,7 +27,7 @@ enum DefaultApp {
         }
     }
 
-    /// Muestra el resultado en un aviso, para usar desde el menú.
+    /// Shows the outcome in an alert; used from the menu.
     static func makeDefaultShowingResult() {
         makeDefault { error in
             let alert = NSAlert()

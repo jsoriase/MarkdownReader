@@ -1,7 +1,7 @@
 import SwiftUI
 
-/// Render del documento: scroll vertical con ancho de línea acotado,
-/// anclas para el índice y gestión de enlaces.
+/// Renders the document: vertical scrolling with a capped column width,
+/// anchors for the outline, and link handling.
 struct MarkdownPreview: View {
     let document: MDDocument
     let theme: MarkdownTheme
@@ -47,7 +47,7 @@ struct MarkdownPreview: View {
     }
 
     private func handle(_ url: URL) -> OpenURLAction.Result {
-        // Ancla interna (#titulo)
+        // Internal anchor (#heading)
         if let fragment = url.fragment, url.host == nil,
            url.path.isEmpty || url.absoluteString.hasPrefix("#") {
             let anchor = fragment.lowercased()
@@ -68,7 +68,7 @@ struct MarkdownPreview: View {
             return .systemAction
         }
 
-        // Ruta relativa o absoluta del sistema de ficheros
+        // Relative or absolute file system path
         guard let base = baseURL?.deletingLastPathComponent() else { return .systemAction }
         let path = url.isFileURL ? url.path : (url.relativePath.removingPercentEncoding ?? url.relativePath)
         guard !path.isEmpty else { return .handled }

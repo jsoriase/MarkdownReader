@@ -1,5 +1,5 @@
 #!/usr/bin/env swift
-// Genera AppResources/AppIcon.icns con el logotipo de la app.
+// Generates AppResources/AppIcon.icns with the app's logo.
 import AppKit
 
 let sizes = [16, 32, 64, 128, 256, 512, 1024]
@@ -12,7 +12,7 @@ func draw(size: Int) -> NSImage {
     image.lockFocus()
     guard let ctx = NSGraphicsContext.current?.cgContext else { image.unlockFocus(); return image }
 
-    // Fondo con esquinas de tipo "squircle"
+    // Squircle-style rounded background
     let inset = s * 0.045
     let rect = CGRect(x: inset, y: inset, width: s - inset * 2, height: s - inset * 2)
     let path = NSBezierPath(roundedRect: rect, xRadius: s * 0.2237, yRadius: s * 0.2237)
@@ -26,7 +26,7 @@ func draw(size: Int) -> NSImage {
                                end: CGPoint(x: s, y: 0),
                                options: [])
     }
-    // Brillo superior suave
+    // Soft highlight across the top
     let sheenColors = [NSColor(white: 1, alpha: 0.16).cgColor,
                        NSColor(white: 1, alpha: 0).cgColor] as CFArray
     if let sheen = CGGradient(colorsSpace: CGColorSpaceCreateDeviceRGB(), colors: sheenColors, locations: [0, 1]) {
@@ -37,7 +37,7 @@ func draw(size: Int) -> NSImage {
     }
     ctx.restoreGState()
 
-    // Marca Markdown: rectángulo redondeado con "M" y flecha
+    // Markdown mark: a rounded rectangle holding an "M" and an arrow
     let markWidth = s * 0.60
     let markHeight = markWidth * 0.62
     let markRect = CGRect(x: (s - markWidth) / 2, y: (s - markHeight) / 2, width: markWidth, height: markHeight)
@@ -66,7 +66,7 @@ func draw(size: Int) -> NSImage {
     NSColor.white.setStroke()
     m.stroke()
 
-    // Flecha hacia abajo
+    // Downward arrow
     let arrowX = markRect.maxX - pad - markRect.width * 0.13
     let arrow = NSBezierPath()
     arrow.move(to: CGPoint(x: arrowX, y: top))
@@ -116,4 +116,4 @@ for size in sizes {
     default: break
     }
 }
-print("iconset generado en \(outDir.path)")
+print("iconset generated at \(outDir.path)")

@@ -65,7 +65,7 @@ enum AppearanceMode: String, CaseIterable, Identifiable {
     }
 }
 
-/// Preferencias de la app, respaldadas por `UserDefaults`.
+/// App preferences, backed by `UserDefaults`.
 final class AppSettings: ObservableObject {
     static let shared = AppSettings()
 
@@ -123,7 +123,7 @@ final class AppSettings: ObservableObject {
     }
 }
 
-/// Tipografía y métricas del render del Markdown.
+/// Typography and metrics used to render the Markdown.
 struct MarkdownTheme: Equatable {
     var baseSize: CGFloat
     var family: PreviewFont

@@ -1,6 +1,6 @@
 import SwiftUI
 
-/// Todo lo que necesitan las vistas de bloque para dibujarse.
+/// Everything the block views need in order to draw themselves.
 struct RenderContext {
     var theme: MarkdownTheme
     var links: [String: String] = [:]
@@ -67,7 +67,7 @@ struct BlockView: View {
     }
 }
 
-// MARK: - Títulos
+// MARK: - Headings
 
 struct HeadingView: View {
     let heading: MDHeading
@@ -91,7 +91,7 @@ struct HeadingView: View {
     }
 }
 
-// MARK: - Código
+// MARK: - Code
 
 struct CodeBlockView: View {
     let code: MDCode
@@ -153,7 +153,7 @@ struct CodeBlockView: View {
     }
 }
 
-// MARK: - Citas y avisos
+// MARK: - Quotes and callouts
 
 struct QuoteView: View {
     let blocks: [MDBlock]
@@ -220,7 +220,7 @@ struct QuoteView: View {
     }
 }
 
-// MARK: - Listas
+// MARK: - Lists
 
 struct ListBlockView: View {
     let list: MDList
@@ -275,7 +275,7 @@ struct ListBlockView: View {
     }
 }
 
-// MARK: - Tablas
+// MARK: - Tables
 
 struct TableView: View {
     let table: MDTable
@@ -332,7 +332,7 @@ struct TableView: View {
     }
 }
 
-// MARK: - Imágenes
+// MARK: - Images
 
 struct MDImageView: View {
     let image: MDImageBlock

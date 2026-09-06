@@ -9,11 +9,11 @@ struct InlineStyle {
     var foreground: Color?
 }
 
-/// Convierte texto Markdown "inline" (negritas, cursivas, código, enlaces…)
-/// en `AttributedString` listo para `Text`.
+/// Turns "inline" Markdown (bold, italics, code, links…) into an
+/// `AttributedString` ready for `Text`.
 ///
-/// El parseo lo hace Foundation (cmark); aquí se resuelven referencias,
-/// autoenlaces y el estilo visual de cada tramo.
+/// The parsing itself is done by Foundation (cmark); this type resolves
+/// reference links and autolinks, and styles every run.
 enum InlineRenderer {
 
     private final class Box {
@@ -29,7 +29,7 @@ enum InlineRenderer {
 
     private static let detector = try? NSDataDetector(types: NSTextCheckingResult.CheckingType.link.rawValue)
 
-    // MARK: - Público
+    // MARK: - Public
 
     static func render(_ markdown: String, style: InlineStyle, links: [String: String] = [:]) -> AttributedString {
         var attr = parsed(markdown, links: links)
@@ -37,7 +37,7 @@ enum InlineRenderer {
         return attr
     }
 
-    // MARK: - Parseo
+    // MARK: - Parsing
 
     static func parsed(_ markdown: String, links: [String: String] = [:]) -> AttributedString {
         let source = resolveReferences(markdown, definitions: links)
@@ -54,7 +54,7 @@ enum InlineRenderer {
         return attr
     }
 
-    // MARK: - Estilo
+    // MARK: - Styling
 
     private static func apply(_ style: InlineStyle, to attr: inout AttributedString) {
         var codeRanges: [Range<AttributedString.Index>] = []
@@ -86,7 +86,7 @@ enum InlineRenderer {
         for range in linkRanges { attr[range].foregroundColor = style.linkColor }
     }
 
-    // MARK: - Autoenlaces
+    // MARK: - Autolinks
 
     private static func detectAutolinks(_ attr: inout AttributedString) {
         guard let detector else { return }
@@ -111,7 +111,7 @@ enum InlineRenderer {
         }
     }
 
-    // MARK: - Enlaces por referencia
+    // MARK: - Reference links
 
     static func resolveReferences(_ markdown: String, definitions: [String: String]) -> String {
         guard !definitions.isEmpty, markdown.contains("[") else { return markdown }

@@ -1,6 +1,6 @@
 import SwiftUI
 
-/// Índice de títulos del documento.
+/// The document's heading outline.
 struct OutlineSidebar: View {
     let headings: [MDHeading]
     var onSelect: (MDHeading) -> Void

@@ -24,8 +24,8 @@ struct MarkdownDocument: FileDocument {
         try self.init(data: data)
     }
 
-    /// Decodifica el fichero: UTF-8 y, si no es válido, Latin-1 (que nunca
-    /// falla) para poder al menos mostrar el contenido.
+    /// Decodes the file: UTF-8 first and, when that fails, Latin-1 (which
+    /// never fails) so the content can at least be shown.
     init(data: Data) throws {
         if let decoded = String(data: data, encoding: .utf8) {
             text = decoded
@@ -43,12 +43,12 @@ struct MarkdownDocument: FileDocument {
         FileWrapper(regularFileWithContents: encodedData())
     }
 
-    /// Bytes que se escriben al guardar, respetando la codificación original.
+    /// The bytes written on save, preserving the file's original encoding.
     func encodedData() -> Data {
         text.data(using: encoding) ?? Data(text.utf8)
     }
 
-    // MARK: - Estadísticas
+    // MARK: - Statistics
 
     var wordCount: Int {
         text.split(whereSeparator: { $0.isWhitespace || $0.isNewline }).count
@@ -62,7 +62,7 @@ struct MarkdownDocument: FileDocument {
         max(1, Int((Double(wordCount) / 220.0).rounded(.up)))
     }
 
-    /// Marca o desmarca la casilla de una lista de tareas en la línea indicada.
+    /// Ticks or unticks the task list checkbox on the given line.
     mutating func setTask(line: Int, checked: Bool) {
         var lines = text.components(separatedBy: "\n")
         guard line >= 0, line < lines.count else { return }
