@@ -1,0 +1,107 @@
+/* MarkdownReader — bs */
+/* View modes */
+"Preview" = "Pregled";
+"Source" = "Kod";
+"Split" = "Podijeljeno";
+
+/* Typefaces */
+"System" = "Sistem";
+"Serif" = "Serif";
+"Rounded" = "Zaobljeno";
+"Monospaced" = "Monospace";
+
+/* Appearance */
+"Automatic" = "Automatski";
+"Light" = "Svijetla";
+"Dark" = "Tamna";
+
+/* GitHub-style callouts */
+"Note" = "Napomena";
+"Tip" = "Savjet";
+"Important" = "Važno";
+"Warning" = "Upozorenje";
+"Caution" = "Oprez";
+
+/* Rendered view */
+"Copy code" = "Kopiraj kod";
+"Toggle task" = "Označi zadatak";
+"Metadata" = "Metapodaci";
+"Not found: %@" = "Nije pronađeno: %@";
+"Loading…" = "Učitavanje…";
+"Empty document" = "Prazan dokument";
+"Switch to the source view (⌘2) to start writing." = "Prebacite se na prikaz koda (⌘2) da počnete pisati.";
+
+/* Outline */
+"Outline" = "Sadržaj";
+"No headings" = "Bez naslova";
+"Filter headings" = "Filtriraj naslove";
+
+/* Window */
+"Untitled" = "Bez naziva";
+"document" = "dokument";
+"Document" = "Dokument";
+"View mode" = "Režim";
+"Rendered view, source code, or both" = "Formatirani prikaz, izvorni kod ili oboje";
+"Reading settings" = "Postavke čitanja";
+"%@ words · %@ min" = "%@ riječi · %@ min";
+"%@ lines" = "%@ redova";
+"%@ words" = "%@ riječi";
+"%@ characters" = "%@ znakova";
+"%@ headings" = "%@ naslova";
+"%@ min" = "%@ min";
+
+/* Menus and toolbar */
+"Bigger text" = "Povećaj tekst";
+"Smaller text" = "Smanji tekst";
+"Actual size" = "Originalna veličina";
+"Actual text size" = "Originalna veličina teksta";
+"Typeface" = "Font";
+"Width" = "Širina";
+"Narrow" = "Usko";
+"Normal" = "Normalno";
+"Wide" = "Široko";
+"Full width" = "Puna širina";
+"Status bar" = "Statusna traka";
+"Appearance" = "Izgled";
+"Open .md files with Markdown Reader" = "Otvaraj .md datoteke pomoću Markdown Reader";
+"Export as HTML…" = "Izvezi kao HTML…";
+"Copy as HTML" = "Kopiraj kao HTML";
+"Reveal in Finder" = "Prikaži u Finderu";
+"Rendered view" = "Formatirani prikaz";
+"Source code" = "Izvorni kod";
+"Split view" = "Podijeljeni prikaz";
+"Show outline" = "Prikaži sadržaj";
+"Hide outline" = "Sakrij sadržaj";
+"Editor" = "Uređivač";
+"Line numbers" = "Brojevi redova";
+"Wrap lines" = "Prelamanje redova";
+"Syntax highlighting" = "Isticanje sintakse";
+"Bigger editor text" = "Povećaj tekst uređivača";
+"Smaller editor text" = "Smanji tekst uređivača";
+
+/* Settings */
+"Reading" = "Čitanje";
+"Typeface:" = "Font:";
+"Size:" = "Veličina:";
+"Text width:" = "Širina teksta:";
+"Narrow (620)" = "Usko (620)";
+"Normal (760)" = "Normalno (760)";
+"Wide (960)" = "Široko (960)";
+"Fill the window" = "Ispuni prozor";
+"Appearance:" = "Izgled:";
+"Open documents in:" = "Pri otvaranju dokumenta:";
+"Show status bar" = "Prikaži statusnu traku";
+"Line numbers" = "Brojevi redova";
+"Wrap long lines" = "Prelamaj duge redove";
+"Highlight Markdown syntax" = "Istakni Markdown sintaksu";
+"Smart quotes and other automatic substitutions are always off, so the Markdown is never altered." = "Pametni navodnici i druge automatske zamjene uvijek su isključeni kako se Markdown nikada ne bi mijenjao.";
+"The quick brown fox jumps over the lazy dog." = "Gojazni đačić s biciklom drži hmelj i finu vatu u džepu nošnje";
+"Markdown Reader opens .md files" = "Markdown Reader otvara .md datoteke";
+"Another app opens .md files" = "Druga aplikacija otvara .md datoteke";
+"Applies when you double-click a file in the Finder." = "Primjenjuje se pri dvostrukom kliku na datoteku u Finderu.";
+"Use this app" = "Koristi ovu aplikaciju";
+
+/* Alerts */
+"Could not change the default app" = "Nije bilo moguće promijeniti zadanu aplikaciju";
+"Markdown Reader is now the default app" = "Markdown Reader je sada zadana aplikacija";
+"Double-clicking a .md file will open it in Markdown Reader." = "Dvostrukim klikom .md datoteka će se otvoriti u Markdown Reader.";

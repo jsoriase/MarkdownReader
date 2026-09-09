@@ -1,0 +1,106 @@
+/* MarkdownReader — el */
+/* View modes */
+"Preview" = "Προεπισκόπηση";
+"Source" = "Κώδικας";
+"Split" = "Διαχωρισμός";
+
+/* Typefaces */
+"System" = "Σύστημα";
+"Serif" = "Σέριφ";
+"Rounded" = "Στρογγυλεμένη";
+"Monospaced" = "Μονοδιάστητη";
+
+/* Appearance */
+"Automatic" = "Αυτόματο";
+"Light" = "Ανοιχτό";
+"Dark" = "Σκούρο";
+
+/* GitHub-style callouts */
+"Note" = "Σημείωση";
+"Tip" = "Συμβουλή";
+"Important" = "Σημαντικό";
+"Warning" = "Προειδοποίηση";
+"Caution" = "Προσοχή";
+
+/* Rendered view */
+"Copy code" = "Αντιγραφή κώδικα";
+"Toggle task" = "Εναλλαγή εργασίας";
+"Metadata" = "Μεταδεδομένα";
+"Not found: %@" = "Δεν βρέθηκε: %@";
+"Loading…" = "Φόρτωση…";
+"Empty document" = "Κενό έγγραφο";
+"Switch to the source view (⌘2) to start writing." = "Μεταβείτε στην προβολή κώδικα (⌘2) για να ξεκινήσετε τη σύνταξη.";
+
+/* Outline */
+"Outline" = "Περίγραμμα";
+"No headings" = "Χωρίς επικεφαλίδες";
+"Filter headings" = "Φιλτράρισμα επικεφαλίδων";
+
+/* Window */
+"Untitled" = "Χωρίς τίτλο";
+"document" = "έγγραφο";
+"Document" = "Έγγραφο";
+"View mode" = "Λειτουργία";
+"Rendered view, source code, or both" = "Μορφοποιημένη προβολή, πηγαίος κώδικας ή και τα δύο";
+"Reading settings" = "Ρυθμίσεις ανάγνωσης";
+"%@ words · %@ min" = "%@ λέξεις · %@ λεπ.";
+"%@ lines" = "%@ γραμμές";
+"%@ words" = "%@ λέξεις";
+"%@ characters" = "%@ χαρακτήρες";
+"%@ headings" = "%@ επικεφαλίδες";
+"%@ min" = "%@ λεπ.";
+
+/* Menus and toolbar */
+"Bigger text" = "Αύξηση κειμένου";
+"Smaller text" = "Μείωση κειμένου";
+"Actual size" = "Πραγματικό μέγεθος";
+"Actual text size" = "Πραγματικό μέγεθος κειμένου";
+"Typeface" = "Γραμματοσειρά";
+"Width" = "Πλάτος";
+"Narrow" = "Στενό";
+"Normal" = "Κανονικό";
+"Wide" = "Φαρδύ";
+"Full width" = "Πλήρες πλάτος";
+"Status bar" = "Γραμμή κατάστασης";
+"Appearance" = "Εμφάνιση";
+"Open .md files with Markdown Reader" = "Άνοιγμα αρχείων .md με το Markdown Reader";
+"Export as HTML…" = "Εξαγωγή ως HTML…";
+"Copy as HTML" = "Αντιγραφή ως HTML";
+"Reveal in Finder" = "Εμφάνιση στο Finder";
+"Rendered view" = "Μορφοποιημένη προβολή";
+"Source code" = "Πηγαίος κώδικας";
+"Split view" = "Προβολή διαχωρισμού";
+"Show outline" = "Εμφάνιση περιγράμματος";
+"Hide outline" = "Απόκρυψη περιγράμματος";
+"Editor" = "Επεξεργαστής";
+"Line numbers" = "Αριθμοί γραμμών";
+"Wrap lines" = "Αναδίπλωση γραμμών";
+"Syntax highlighting" = "Επισήμανση σύνταξης";
+"Bigger editor text" = "Αύξηση κειμένου επεξεργαστή";
+"Smaller editor text" = "Μείωση κειμένου επεξεργαστή";
+
+/* Settings */
+"Reading" = "Ανάγνωση";
+"Typeface:" = "Γραμματοσειρά:";
+"Size:" = "Μέγεθος:";
+"Text width:" = "Πλάτος κειμένου:";
+"Narrow (620)" = "Στενό (620)";
+"Normal (760)" = "Κανονικό (760)";
+"Wide (960)" = "Φαρδύ (960)";
+"Fill the window" = "Πλήρωση του παραθύρου";
+"Appearance:" = "Εμφάνιση:";
+"Open documents in:" = "Άνοιγμα εγγράφων σε:";
+"Show status bar" = "Εμφάνιση γραμμής κατάστασης";
+"Wrap long lines" = "Αναδίπλωση μεγάλων γραμμών";
+"Highlight Markdown syntax" = "Επισήμανση σύνταξης Markdown";
+"Smart quotes and other automatic substitutions are always off, so the Markdown is never altered." = "Τα έξυπνα εισαγωγικά και οι άλλες αυτόματες αντικαταστάσεις είναι πάντα απενεργοποιημένα, ώστε το Markdown να μην αλλοιώνεται ποτέ.";
+"The quick brown fox jumps over the lazy dog." = "Ξεσκεπάζω την ψυχοφθόρα βδελυγμία.";
+"Markdown Reader opens .md files" = "Το Markdown Reader ανοίγει τα αρχεία .md";
+"Another app opens .md files" = "Μια άλλη εφαρμογή ανοίγει τα αρχεία .md";
+"Applies when you double-click a file in the Finder." = "Ισχύει όταν κάνετε διπλό κλικ σε ένα αρχείο στο Finder.";
+"Use this app" = "Χρήση αυτής της εφαρμογής";
+
+/* Alerts */
+"Could not change the default app" = "Δεν ήταν δυνατή η αλλαγή της προεπιλεγμένης εφαρμογής";
+"Markdown Reader is now the default app" = "Το Markdown Reader είναι πλέον η προεπιλεγμένη εφαρμογή";
+"Double-clicking a .md file will open it in Markdown Reader." = "Με διπλό κλικ, ένα αρχείο .md θα ανοίγει στο Markdown Reader.";

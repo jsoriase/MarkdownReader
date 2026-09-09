@@ -1,0 +1,107 @@
+/* MarkdownReader — lt */
+
+/* View modes */
+"Preview" = "Peržiūra";
+"Source" = "Šaltinis";
+"Split" = "Padalytas";
+
+/* Typefaces */
+"System" = "Sistema";
+"Serif" = "Serifas";
+"Rounded" = "Suapvalintas";
+"Monospaced" = "Fiksuoto pločio";
+
+/* Appearance */
+"Automatic" = "Automatinis";
+"Light" = "Šviesus";
+"Dark" = "Tamsus";
+
+/* GitHub-style callouts */
+"Note" = "Pastaba";
+"Tip" = "Patarimas";
+"Important" = "Svarbu";
+"Warning" = "Įspėjimas";
+"Caution" = "Dėmesio";
+
+/* Rendered view */
+"Copy code" = "Kopijuoti kodą";
+"Toggle task" = "Perjungti užduotį";
+"Metadata" = "Metaduomenys";
+"Not found: %@" = "Nerasta: %@";
+"Loading…" = "Įkeliama…";
+"Empty document" = "Tuščias dokumentas";
+"Switch to the source view (⌘2) to start writing." = "Perjunkite į šaltinio rodinį (⌘2), kad pradėtumėte rašyti.";
+
+/* Outline */
+"Outline" = "Struktūra";
+"No headings" = "Nėra antraščių";
+"Filter headings" = "Filtruoti antraštes";
+
+/* Window */
+"Untitled" = "Be pavadinimo";
+"document" = "dokumentas";
+"Document" = "Dokumentas";
+"View mode" = "Rodymo režimas";
+"Rendered view, source code, or both" = "Atvaizduotas vaizdas, šaltinio kodas arba abu";
+"Reading settings" = "Skaitymo nustatymai";
+"%@ words · %@ min" = "%@ žodžiai · %@ min";
+"%@ lines" = "%@ eilutės";
+"%@ words" = "%@ žodžiai";
+"%@ characters" = "%@ simboliai";
+"%@ headings" = "%@ antraštės";
+"%@ min" = "%@ min";
+
+/* Menus and toolbar */
+"Bigger text" = "Didesnis tekstas";
+"Smaller text" = "Mažesnis tekstas";
+"Actual size" = "Tikrasis dydis";
+"Actual text size" = "Tikrasis teksto dydis";
+"Typeface" = "Šriftas";
+"Width" = "Plotis";
+"Narrow" = "Siauras";
+"Normal" = "Įprastas";
+"Wide" = "Platus";
+"Full width" = "Visas plotis";
+"Status bar" = "Būsenos juosta";
+"Appearance" = "Išvaizda";
+"Open .md files with Markdown Reader" = "Atidaryti .md failus su Markdown Reader";
+"Export as HTML…" = "Eksportuoti kaip HTML…";
+"Copy as HTML" = "Kopijuoti kaip HTML";
+"Reveal in Finder" = "Rodyti „Finder“";
+"Rendered view" = "Atvaizduotas vaizdas";
+"Source code" = "Šaltinio kodas";
+"Split view" = "Padalytas vaizdas";
+"Show outline" = "Rodyti struktūrą";
+"Hide outline" = "Slėpti struktūrą";
+"Editor" = "Redaktorius";
+"Line numbers" = "Eilučių numeriai";
+"Wrap lines" = "Laužyti eilutes";
+"Syntax highlighting" = "Sintaksės paryškinimas";
+"Bigger editor text" = "Didesnis redaktoriaus tekstas";
+"Smaller editor text" = "Mažesnis redaktoriaus tekstas";
+
+/* Settings */
+"Reading" = "Skaitymas";
+"Typeface:" = "Šriftas:";
+"Size:" = "Dydis:";
+"Text width:" = "Teksto plotis:";
+"Narrow (620)" = "Siauras (620)";
+"Normal (760)" = "Įprastas (760)";
+"Wide (960)" = "Platus (960)";
+"Fill the window" = "Užpildyti langą";
+"Appearance:" = "Išvaizda:";
+"Open documents in:" = "Atidaryti dokumentus:";
+"Show status bar" = "Rodyti būsenos juostą";
+"Wrap long lines" = "Laužyti ilgas eilutes";
+"Highlight Markdown syntax" = "Paryškinti „Markdown“ sintaksę";
+"Smart quotes and other automatic substitutions are always off, so the Markdown is never altered." = "Išmaniosios kabutės ir kiti automatiniai pakeitimai visada išjungti, kad „Markdown“ nebūtų pakeistas.";
+"The quick brown fox jumps over the lazy dog." = "Įlinkdama fechtuotojo špaga sublykčiojusi pragręžė apvalų arbūzą.";
+"Markdown Reader opens .md files" = "Markdown Reader atidaro .md failus";
+"Another app opens .md files" = "Kita programa atidaro .md failus";
+"Applies when you double-click a file in the Finder." = "Taikoma dukart spustelėjus failą „Finder“.";
+"Use this app" = "Naudoti šią programą";
+
+/* Alerts */
+"Could not change the default app" = "Nepavyko pakeisti numatytosios programos";
+"Markdown Reader is now the default app" = "Markdown Reader dabar yra numatytoji programa";
+"Double-clicking a .md file will open it in Markdown Reader." = "Dukart spustelėjus .md failą, jis bus atidarytas su Markdown Reader.";

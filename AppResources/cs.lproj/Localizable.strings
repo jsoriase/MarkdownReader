@@ -1,0 +1,107 @@
+/* MarkdownReader — cs */
+/* View modes */
+"Preview" = "Náhled";
+"Source" = "Kód";
+"Split" = "Rozdělené";
+
+/* Typefaces */
+"System" = "Systémové";
+"Serif" = "Patkové";
+"Rounded" = "Zaoblené";
+"Monospaced" = "Neproporcionální";
+
+/* Appearance */
+"Automatic" = "Automaticky";
+"Light" = "Světlý";
+"Dark" = "Tmavý";
+
+/* GitHub-style callouts */
+"Note" = "Poznámka";
+"Tip" = "Tip";
+"Important" = "Důležité";
+"Warning" = "Upozornění";
+"Caution" = "Výstraha";
+
+/* Rendered view */
+"Copy code" = "Kopírovat kód";
+"Toggle task" = "Přepnout úkol";
+"Metadata" = "Metadata";
+"Not found: %@" = "Nenalezeno: %@";
+"Loading…" = "Načítání…";
+"Empty document" = "Prázdný dokument";
+"Switch to the source view (⌘2) to start writing." = "Přepněte do zobrazení kódu (⌘2) a začněte psát.";
+
+/* Outline */
+"Outline" = "Osnova";
+"No headings" = "Bez nadpisů";
+"Filter headings" = "Filtrovat nadpisy";
+
+/* Window */
+"Untitled" = "Bez názvu";
+"document" = "dokument";
+"Document" = "Dokument";
+"View mode" = "Režim";
+"Rendered view, source code, or both" = "Formátované zobrazení, zdrojový kód nebo obojí";
+"Reading settings" = "Nastavení čtení";
+"%@ words · %@ min" = "%@ slov · %@ min";
+"%@ lines" = "%@ řádků";
+"%@ words" = "%@ slov";
+"%@ characters" = "%@ znaků";
+"%@ headings" = "%@ nadpisů";
+"%@ min" = "%@ min";
+
+/* Menus and toolbar */
+"Bigger text" = "Zvětšit text";
+"Smaller text" = "Zmenšit text";
+"Actual size" = "Původní velikost";
+"Actual text size" = "Původní velikost textu";
+"Typeface" = "Písmo";
+"Width" = "Šířka";
+"Narrow" = "Úzká";
+"Normal" = "Normální";
+"Wide" = "Široká";
+"Full width" = "Plná šířka";
+"Status bar" = "Stavový řádek";
+"Appearance" = "Vzhled";
+"Open .md files with Markdown Reader" = "Otevírat soubory .md v Markdown Reader";
+"Export as HTML…" = "Exportovat jako HTML…";
+"Copy as HTML" = "Kopírovat jako HTML";
+"Reveal in Finder" = "Zobrazit ve Finderu";
+"Rendered view" = "Formátované zobrazení";
+"Source code" = "Zdrojový kód";
+"Split view" = "Rozdělené zobrazení";
+"Show outline" = "Zobrazit osnovu";
+"Hide outline" = "Skrýt osnovu";
+"Editor" = "Editor";
+"Line numbers" = "Čísla řádků";
+"Wrap lines" = "Zalamovat řádky";
+"Syntax highlighting" = "Zvýrazňování syntaxe";
+"Bigger editor text" = "Zvětšit text editoru";
+"Smaller editor text" = "Zmenšit text editoru";
+
+/* Settings */
+"Reading" = "Čtení";
+"Typeface:" = "Písmo:";
+"Size:" = "Velikost:";
+"Text width:" = "Šířka textu:";
+"Narrow (620)" = "Úzká (620)";
+"Normal (760)" = "Normální (760)";
+"Wide (960)" = "Široká (960)";
+"Fill the window" = "Vyplnit okno";
+"Appearance:" = "Vzhled:";
+"Open documents in:" = "Při otevření dokumentu:";
+"Show status bar" = "Zobrazovat stavový řádek";
+"Line numbers" = "Čísla řádků";
+"Wrap long lines" = "Zalamovat dlouhé řádky";
+"Highlight Markdown syntax" = "Zvýrazňovat syntaxi Markdown";
+"Smart quotes and other automatic substitutions are always off, so the Markdown is never altered." = "Typografické uvozovky a další automatické náhrady jsou vždy vypnuté, aby se Markdown nikdy nezměnil.";
+"The quick brown fox jumps over the lazy dog." = "Příliš žluťoučký kůň úpěl ďábelské ódy.";
+"Markdown Reader opens .md files" = "Markdown Reader otevírá soubory .md";
+"Another app opens .md files" = "Jiná aplikace otevírá soubory .md";
+"Applies when you double-click a file in the Finder." = "Platí pro poklepání na soubor ve Finderu.";
+"Use this app" = "Použít tuto aplikaci";
+
+/* Alerts */
+"Could not change the default app" = "Výchozí aplikaci se nepodařilo změnit";
+"Markdown Reader is now the default app" = "Markdown Reader je nyní výchozí aplikací";
+"Double-clicking a .md file will open it in Markdown Reader." = "Soubory .md se po poklepání otevřou v Markdown Reader.";

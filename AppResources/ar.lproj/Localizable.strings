@@ -1,0 +1,107 @@
+/* MarkdownReader — ar */
+/* View modes */
+"Preview" = "معاينة";
+"Source" = "المصدر";
+"Split" = "مقسّم";
+
+/* Typefaces */
+"System" = "النظام";
+"Serif" = "مزخرف";
+"Rounded" = "مستدير";
+"Monospaced" = "أحادي المسافة";
+
+/* Appearance */
+"Automatic" = "تلقائي";
+"Light" = "فاتح";
+"Dark" = "داكن";
+
+/* GitHub-style callouts */
+"Note" = "ملاحظة";
+"Tip" = "تلميح";
+"Important" = "مهم";
+"Warning" = "تحذير";
+"Caution" = "تنبيه";
+
+/* Rendered view */
+"Copy code" = "نسخ الشيفرة";
+"Toggle task" = "تبديل المهمة";
+"Metadata" = "بيانات وصفية";
+"Not found: %@" = "غير موجود: %@";
+"Loading…" = "جارٍ التحميل…";
+"Empty document" = "مستند فارغ";
+"Switch to the source view (⌘2) to start writing." = "بدّل إلى عرض المصدر (⌘2) لبدء الكتابة.";
+
+/* Outline */
+"Outline" = "الفهرس";
+"No headings" = "لا توجد عناوين";
+"Filter headings" = "تصفية العناوين";
+
+/* Window */
+"Untitled" = "بدون عنوان";
+"document" = "مستند";
+"Document" = "مستند";
+"View mode" = "النمط";
+"Rendered view, source code, or both" = "عرض منسّق أو الشيفرة المصدرية أو كلاهما";
+"Reading settings" = "إعدادات القراءة";
+"%@ words · %@ min" = "%@ كلمات · %@ دقيقة";
+"%@ lines" = "%@ أسطر";
+"%@ words" = "%@ كلمات";
+"%@ characters" = "%@ أحرف";
+"%@ headings" = "%@ عناوين";
+"%@ min" = "%@ دقيقة";
+
+/* Menus and toolbar */
+"Bigger text" = "تكبير النص";
+"Smaller text" = "تصغير النص";
+"Actual size" = "الحجم الأصلي";
+"Actual text size" = "حجم النص الأصلي";
+"Typeface" = "الخط";
+"Width" = "العرض";
+"Narrow" = "ضيّق";
+"Normal" = "عادي";
+"Wide" = "واسع";
+"Full width" = "كامل العرض";
+"Status bar" = "شريط الحالة";
+"Appearance" = "المظهر";
+"Open .md files with Markdown Reader" = "استخدام Markdown Reader لفتح ملفات .md";
+"Export as HTML…" = "تصدير بتنسيق HTML…";
+"Copy as HTML" = "نسخ بتنسيق HTML";
+"Reveal in Finder" = "إظهار في Finder";
+"Rendered view" = "عرض منسّق";
+"Source code" = "الشيفرة المصدرية";
+"Split view" = "عرض مقسّم";
+"Show outline" = "إظهار الفهرس";
+"Hide outline" = "إخفاء الفهرس";
+"Editor" = "المحرر";
+"Line numbers" = "أرقام الأسطر";
+"Wrap lines" = "التفاف الأسطر";
+"Syntax highlighting" = "تمييز الصياغة";
+"Bigger editor text" = "تكبير نص المحرر";
+"Smaller editor text" = "تصغير نص المحرر";
+
+/* Settings */
+"Reading" = "القراءة";
+"Typeface:" = "الخط:";
+"Size:" = "الحجم:";
+"Text width:" = "عرض النص:";
+"Narrow (620)" = "ضيّق (620)";
+"Normal (760)" = "عادي (760)";
+"Wide (960)" = "واسع (960)";
+"Fill the window" = "ملء النافذة";
+"Appearance:" = "المظهر:";
+"Open documents in:" = "عند فتح مستند:";
+"Show status bar" = "إظهار شريط الحالة";
+"Line numbers" = "أرقام الأسطر";
+"Wrap long lines" = "التفاف الأسطر الطويلة";
+"Highlight Markdown syntax" = "تمييز صياغة Markdown";
+"Smart quotes and other automatic substitutions are always off, so the Markdown is never altered." = "علامات الاقتباس الذكية والاستبدالات التلقائية معطّلة دائمًا حتى لا يتم تغيير Markdown أبدًا.";
+"The quick brown fox jumps over the lazy dog." = "صِف خلق خود كمثل الشمس إذ بزغت يحظى الضجيع بها نجلاء معطار";
+"Markdown Reader opens .md files" = "Markdown Reader يفتح ملفات .md";
+"Another app opens .md files" = "تطبيق آخر يفتح ملفات .md";
+"Applies when you double-click a file in the Finder." = "يُطبَّق عند النقر المزدوج على ملف في Finder.";
+"Use this app" = "استخدام هذا التطبيق";
+
+/* Alerts */
+"Could not change the default app" = "تعذّر تغيير التطبيق الافتراضي";
+"Markdown Reader is now the default app" = "Markdown Reader هو الآن التطبيق الافتراضي";
+"Double-clicking a .md file will open it in Markdown Reader." = "سيؤدي النقر المزدوج على ملف .md إلى فتحه في Markdown Reader.";

@@ -1,0 +1,106 @@
+/* MarkdownReader — tr */
+/* View modes */
+"Preview" = "Önizleme";
+"Source" = "Kaynak";
+"Split" = "Bölünmüş";
+
+/* Typefaces */
+"System" = "Sistem";
+"Serif" = "Serif";
+"Rounded" = "Yuvarlatılmış";
+"Monospaced" = "Eş aralıklı";
+
+/* Appearance */
+"Automatic" = "Otomatik";
+"Light" = "Açık";
+"Dark" = "Koyu";
+
+/* GitHub-style callouts */
+"Note" = "Not";
+"Tip" = "İpucu";
+"Important" = "Önemli";
+"Warning" = "Uyarı";
+"Caution" = "Dikkat";
+
+/* Rendered view */
+"Copy code" = "Kodu kopyala";
+"Toggle task" = "Görevi işaretle";
+"Metadata" = "Metaveri";
+"Not found: %@" = "Bulunamadı: %@";
+"Loading…" = "Yükleniyor…";
+"Empty document" = "Boş belge";
+"Switch to the source view (⌘2) to start writing." = "Yazmaya başlamak için kaynak görünümüne geçin (⌘2).";
+
+/* Outline */
+"Outline" = "İçindekiler";
+"No headings" = "Başlık yok";
+"Filter headings" = "Başlıkları filtrele";
+
+/* Window */
+"Untitled" = "Adsız";
+"document" = "belge";
+"Document" = "Belge";
+"View mode" = "Mod";
+"Rendered view, source code, or both" = "Oluşturulmuş görünüm, kaynak kodu veya ikisi";
+"Reading settings" = "Okuma ayarları";
+"%@ words · %@ min" = "%@ sözcük · %@ dk";
+"%@ lines" = "%@ satır";
+"%@ words" = "%@ sözcük";
+"%@ characters" = "%@ karakter";
+"%@ headings" = "%@ başlık";
+"%@ min" = "%@ dk";
+
+/* Menus and toolbar */
+"Bigger text" = "Metni büyüt";
+"Smaller text" = "Metni küçült";
+"Actual size" = "Gerçek boyut";
+"Actual text size" = "Gerçek metin boyutu";
+"Typeface" = "Yazı tipi";
+"Width" = "Genişlik";
+"Narrow" = "Dar";
+"Normal" = "Normal";
+"Wide" = "Geniş";
+"Full width" = "Tam genişlik";
+"Status bar" = "Durum çubuğu";
+"Appearance" = "Görünüm";
+"Open .md files with Markdown Reader" = ".md dosyalarını Markdown Reader ile aç";
+"Export as HTML…" = "HTML olarak dışa aktar…";
+"Copy as HTML" = "HTML olarak kopyala";
+"Reveal in Finder" = "Finder’da göster";
+"Rendered view" = "Oluşturulmuş görünüm";
+"Source code" = "Kaynak kodu";
+"Split view" = "Bölünmüş görünüm";
+"Show outline" = "İçindekileri göster";
+"Hide outline" = "İçindekileri gizle";
+"Editor" = "Düzenleyici";
+"Line numbers" = "Satır numaraları";
+"Wrap lines" = "Satırları kaydır";
+"Syntax highlighting" = "Sözdizimi vurgulama";
+"Bigger editor text" = "Düzenleyici metnini büyüt";
+"Smaller editor text" = "Düzenleyici metnini küçült";
+
+/* Settings */
+"Reading" = "Okuma";
+"Typeface:" = "Yazı tipi:";
+"Size:" = "Boyut:";
+"Text width:" = "Metin genişliği:";
+"Narrow (620)" = "Dar (620)";
+"Normal (760)" = "Normal (760)";
+"Wide (960)" = "Geniş (960)";
+"Fill the window" = "Pencereyi doldur";
+"Appearance:" = "Görünüm:";
+"Open documents in:" = "Belgeleri şurada aç:";
+"Show status bar" = "Durum çubuğunu göster";
+"Wrap long lines" = "Uzun satırları kaydır";
+"Highlight Markdown syntax" = "Markdown sözdizimini vurgula";
+"Smart quotes and other automatic substitutions are always off, so the Markdown is never altered." = "Akıllı tırnak işaretleri ve diğer otomatik değiştirmeler her zaman kapalıdır, bu nedenle Markdown asla değiştirilmez.";
+"The quick brown fox jumps over the lazy dog." = "Pijamalı hasta yağız şoföre çabucak güvendi.";
+"Markdown Reader opens .md files" = "Markdown Reader .md dosyalarını açar";
+"Another app opens .md files" = "Başka bir uygulama .md dosyalarını açar";
+"Applies when you double-click a file in the Finder." = "Finder’da bir dosyayı çift tıkladığınızda uygulanır.";
+"Use this app" = "Bu uygulamayı kullan";
+
+/* Alerts */
+"Could not change the default app" = "Varsayılan uygulama değiştirilemedi";
+"Markdown Reader is now the default app" = "Markdown Reader artık varsayılan uygulama";
+"Double-clicking a .md file will open it in Markdown Reader." = ".md dosyasını çift tıkladığınızda Markdown Reader’da açılır.";

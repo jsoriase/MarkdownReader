@@ -1,0 +1,106 @@
+/* MarkdownReader — zh-Hans */
+/* View modes */
+"Preview" = "预览";
+"Source" = "代码";
+"Split" = "分栏";
+
+/* Typefaces */
+"System" = "系统";
+"Serif" = "衬线体";
+"Rounded" = "圆体";
+"Monospaced" = "等宽";
+
+/* Appearance */
+"Automatic" = "自动";
+"Light" = "浅色";
+"Dark" = "深色";
+
+/* GitHub-style callouts */
+"Note" = "注";
+"Tip" = "提示";
+"Important" = "重要";
+"Warning" = "警告";
+"Caution" = "注意";
+
+/* Rendered view */
+"Copy code" = "拷贝代码";
+"Toggle task" = "切换任务状态";
+"Metadata" = "元数据";
+"Not found: %@" = "未找到：%@";
+"Loading…" = "正在载入…";
+"Empty document" = "空文稿";
+"Switch to the source view (⌘2) to start writing." = "切换到源代码视图 (⌘2) 以开始编写。";
+
+/* Outline */
+"Outline" = "大纲";
+"No headings" = "无标题";
+"Filter headings" = "过滤标题";
+
+/* Window */
+"Untitled" = "未命名";
+"document" = "文稿";
+"Document" = "文稿";
+"View mode" = "模式";
+"Rendered view, source code, or both" = "渲染视图、源代码或两者";
+"Reading settings" = "阅读设置";
+"%@ words · %@ min" = "%@ 字 · %@ 分钟";
+"%@ lines" = "%@ 行";
+"%@ words" = "%@ 字";
+"%@ characters" = "%@ 个字符";
+"%@ headings" = "%@ 个标题";
+"%@ min" = "%@ 分钟";
+
+/* Menus and toolbar */
+"Bigger text" = "放大文本";
+"Smaller text" = "缩小文本";
+"Actual size" = "实际大小";
+"Actual text size" = "实际文本大小";
+"Typeface" = "字体";
+"Width" = "宽度";
+"Narrow" = "窄";
+"Normal" = "普通";
+"Wide" = "宽";
+"Full width" = "全宽";
+"Status bar" = "状态栏";
+"Appearance" = "外观";
+"Open .md files with Markdown Reader" = "使用 Markdown Reader 打开 .md 文件";
+"Export as HTML…" = "导出为 HTML…";
+"Copy as HTML" = "拷贝为 HTML";
+"Reveal in Finder" = "在访达中显示";
+"Rendered view" = "渲染视图";
+"Source code" = "源代码";
+"Split view" = "分栏视图";
+"Show outline" = "显示大纲";
+"Hide outline" = "隐藏大纲";
+"Editor" = "编辑器";
+"Line numbers" = "行号";
+"Wrap lines" = "自动换行";
+"Syntax highlighting" = "语法高亮";
+"Bigger editor text" = "放大编辑器文本";
+"Smaller editor text" = "缩小编辑器文本";
+
+/* Settings */
+"Reading" = "阅读";
+"Typeface:" = "字体：";
+"Size:" = "大小：";
+"Text width:" = "文本宽度：";
+"Narrow (620)" = "窄 (620)";
+"Normal (760)" = "普通 (760)";
+"Wide (960)" = "宽 (960)";
+"Fill the window" = "填满窗口";
+"Appearance:" = "外观：";
+"Open documents in:" = "打开文稿时使用：";
+"Show status bar" = "显示状态栏";
+"Wrap long lines" = "换行显示长行";
+"Highlight Markdown syntax" = "高亮 Markdown 语法";
+"Smart quotes and other automatic substitutions are always off, so the Markdown is never altered." = "智能引号和其他自动替换始终处于关闭状态，因此 Markdown 绝不会被更改。";
+"The quick brown fox jumps over the lazy dog." = "敏捷的棕色狐狸跳过了懒惰的狗。";
+"Markdown Reader opens .md files" = "Markdown Reader 会打开 .md 文件";
+"Another app opens .md files" = "其他 App 会打开 .md 文件";
+"Applies when you double-click a file in the Finder." = "在访达中连按文件时应用。";
+"Use this app" = "使用此 App";
+
+/* Alerts */
+"Could not change the default app" = "无法更改默认 App";
+"Markdown Reader is now the default app" = "Markdown Reader 已是默认 App";
+"Double-clicking a .md file will open it in Markdown Reader." = "连按 .md 文件将在 Markdown Reader 中打开。";

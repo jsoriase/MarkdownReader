@@ -1,0 +1,107 @@
+/* MarkdownReader — it */
+
+/* View modes */
+"Preview" = "Anteprima";
+"Source" = "Sorgente";
+"Split" = "Divisa";
+
+/* Typefaces */
+"System" = "Sistema";
+"Serif" = "Serif";
+"Rounded" = "Arrotondato";
+"Monospaced" = "Monospaziato";
+
+/* Appearance */
+"Automatic" = "Automatico";
+"Light" = "Chiaro";
+"Dark" = "Scuro";
+
+/* GitHub-style callouts */
+"Note" = "Nota";
+"Tip" = "Suggerimento";
+"Important" = "Importante";
+"Warning" = "Avviso";
+"Caution" = "Attenzione";
+
+/* Rendered view */
+"Copy code" = "Copia codice";
+"Toggle task" = "Segna attività";
+"Metadata" = "Metadati";
+"Not found: %@" = "Non trovato: %@";
+"Loading…" = "Caricamento…";
+"Empty document" = "Documento vuoto";
+"Switch to the source view (⌘2) to start writing." = "Passa alla vista sorgente (⌘2) per iniziare a scrivere.";
+
+/* Outline */
+"Outline" = "Indice";
+"No headings" = "Nessun titolo";
+"Filter headings" = "Filtra titoli";
+
+/* Window */
+"Untitled" = "Senza titolo";
+"document" = "documento";
+"Document" = "Documento";
+"View mode" = "Modalità vista";
+"Rendered view, source code, or both" = "Vista formattata, codice sorgente o entrambi";
+"Reading settings" = "Impostazioni di lettura";
+"%@ words · %@ min" = "%@ parole · %@ min";
+"%@ lines" = "%@ righe";
+"%@ words" = "%@ parole";
+"%@ characters" = "%@ caratteri";
+"%@ headings" = "%@ titoli";
+"%@ min" = "%@ min";
+
+/* Menus and toolbar */
+"Bigger text" = "Testo più grande";
+"Smaller text" = "Testo più piccolo";
+"Actual size" = "Dimensioni effettive";
+"Actual text size" = "Dimensioni testo effettive";
+"Typeface" = "Carattere";
+"Width" = "Larghezza";
+"Narrow" = "Stretta";
+"Normal" = "Normale";
+"Wide" = "Larga";
+"Full width" = "Larghezza intera";
+"Status bar" = "Barra di stato";
+"Appearance" = "Aspetto";
+"Open .md files with Markdown Reader" = "Apri i file .md con Markdown Reader";
+"Export as HTML…" = "Esporta come HTML…";
+"Copy as HTML" = "Copia come HTML";
+"Reveal in Finder" = "Mostra nel Finder";
+"Rendered view" = "Vista formattata";
+"Source code" = "Codice sorgente";
+"Split view" = "Vista divisa";
+"Show outline" = "Mostra indice";
+"Hide outline" = "Nascondi indice";
+"Editor" = "Editor";
+"Line numbers" = "Numeri di riga";
+"Wrap lines" = "A capo automatico";
+"Syntax highlighting" = "Evidenziazione sintassi";
+"Bigger editor text" = "Ingrandisci testo editor";
+"Smaller editor text" = "Riduci testo editor";
+
+/* Settings */
+"Reading" = "Lettura";
+"Typeface:" = "Carattere:";
+"Size:" = "Dimensione:";
+"Text width:" = "Larghezza testo:";
+"Narrow (620)" = "Stretta (620)";
+"Normal (760)" = "Normale (760)";
+"Wide (960)" = "Larga (960)";
+"Fill the window" = "Occupa la finestra";
+"Appearance:" = "Aspetto:";
+"Open documents in:" = "Apri i documenti in:";
+"Show status bar" = "Mostra barra di stato";
+"Wrap long lines" = "Manda a capo le righe lunghe";
+"Highlight Markdown syntax" = "Evidenzia la sintassi Markdown";
+"Smart quotes and other automatic substitutions are always off, so the Markdown is never altered." = "Le virgolette tipografiche e le altre sostituzioni automatiche sono sempre disattivate, così il Markdown non viene mai modificato.";
+"The quick brown fox jumps over the lazy dog." = "Ma la volpe, col suo balzo, ha raggiunto il quieto Fido.";
+"Markdown Reader opens .md files" = "Markdown Reader apre i file .md";
+"Another app opens .md files" = "Un'altra app apre i file .md";
+"Applies when you double-click a file in the Finder." = "Vale quando fai doppio clic su un file nel Finder.";
+"Use this app" = "Usa questa app";
+
+/* Alerts */
+"Could not change the default app" = "Impossibile cambiare l'app predefinita";
+"Markdown Reader is now the default app" = "Markdown Reader è ora l'app predefinita";
+"Double-clicking a .md file will open it in Markdown Reader." = "Facendo doppio clic su un file .md si aprirà in Markdown Reader.";

@@ -1,0 +1,107 @@
+/* MarkdownReader — is */
+
+/* View modes */
+"Preview" = "Forskoðun";
+"Source" = "Kóði";
+"Split" = "Skipt";
+
+/* Typefaces */
+"System" = "Kerfi";
+"Serif" = "Serif";
+"Rounded" = "Rúnað";
+"Monospaced" = "Jafnbreitt";
+
+/* Appearance */
+"Automatic" = "Sjálfvirkt";
+"Light" = "Ljóst";
+"Dark" = "Dökkt";
+
+/* GitHub-style callouts */
+"Note" = "Athugasemd";
+"Tip" = "Ábending";
+"Important" = "Mikilvægt";
+"Warning" = "Viðvörun";
+"Caution" = "Varúð";
+
+/* Rendered view */
+"Copy code" = "Afrita kóða";
+"Toggle task" = "Merkja verkefni";
+"Metadata" = "Lýsigögn";
+"Not found: %@" = "Fannst ekki: %@";
+"Loading…" = "Hleð…";
+"Empty document" = "Autt skjal";
+"Switch to the source view (⌘2) to start writing." = "Skiptu yfir í kóðaham (⌘2) til að byrja að skrifa.";
+
+/* Outline */
+"Outline" = "Efnisyfirlit";
+"No headings" = "Engar fyrirsagnir";
+"Filter headings" = "Sía fyrirsagnir";
+
+/* Window */
+"Untitled" = "Ónefnt";
+"document" = "skjal";
+"Document" = "Skjal";
+"View mode" = "Skoðunarhamur";
+"Rendered view, source code, or both" = "Birt útgáfa, frumkóði eða hvort tveggja";
+"Reading settings" = "Lestrarstillingar";
+"%@ words · %@ min" = "%@ orð · %@ mín";
+"%@ lines" = "%@ línur";
+"%@ words" = "%@ orð";
+"%@ characters" = "%@ stafir";
+"%@ headings" = "%@ fyrirsagnir";
+"%@ min" = "%@ mín";
+
+/* Menus and toolbar */
+"Bigger text" = "Stærri texti";
+"Smaller text" = "Minni texti";
+"Actual size" = "Raunstærð";
+"Actual text size" = "Rauntextastærð";
+"Typeface" = "Leturgerð";
+"Width" = "Breidd";
+"Narrow" = "Mjór";
+"Normal" = "Venjuleg";
+"Wide" = "Breið";
+"Full width" = "Full breidd";
+"Status bar" = "Stöðustika";
+"Appearance" = "Útlit";
+"Open .md files with Markdown Reader" = "Opna .md skrár með Markdown Reader";
+"Export as HTML…" = "Flytja út sem HTML…";
+"Copy as HTML" = "Afrita sem HTML";
+"Reveal in Finder" = "Sýna í Finder";
+"Rendered view" = "Birt útgáfa";
+"Source code" = "Frumkóði";
+"Split view" = "Skiptur hamur";
+"Show outline" = "Sýna efnisyfirlit";
+"Hide outline" = "Fela efnisyfirlit";
+"Editor" = "Ritill";
+"Line numbers" = "Línunúmer";
+"Wrap lines" = "Brjóta línur";
+"Syntax highlighting" = "Auðkenning setningafræði";
+"Bigger editor text" = "Stærri texti í ritli";
+"Smaller editor text" = "Minni texti í ritli";
+
+/* Settings */
+"Reading" = "Lestur";
+"Typeface:" = "Leturgerð:";
+"Size:" = "Stærð:";
+"Text width:" = "Textabreidd:";
+"Narrow (620)" = "Mjór (620)";
+"Normal (760)" = "Venjuleg (760)";
+"Wide (960)" = "Breið (960)";
+"Fill the window" = "Fylla gluggann";
+"Appearance:" = "Útlit:";
+"Open documents in:" = "Opna skjöl í:";
+"Show status bar" = "Sýna stöðustiku";
+"Wrap long lines" = "Brjóta langar línur";
+"Highlight Markdown syntax" = "Auðkenna Markdown-setningafræði";
+"Smart quotes and other automatic substitutions are always off, so the Markdown is never altered." = "Snjallar gæsalappir og aðrar sjálfvirkar staðgenglar eru alltaf óvirkir, svo Markdown er aldrei breytt.";
+"The quick brown fox jumps over the lazy dog." = "Kæmi ný öxi hér ykist þjófum nú bæði víl og ádrepa.";
+"Markdown Reader opens .md files" = "Markdown Reader opnar .md skrár";
+"Another app opens .md files" = "Annað forrit opnar .md skrár";
+"Applies when you double-click a file in the Finder." = "Á við þegar tvísmellt er á skrá í Finder.";
+"Use this app" = "Nota þetta forrit";
+
+/* Alerts */
+"Could not change the default app" = "Tókst ekki að breyta sjálfgefnu forriti";
+"Markdown Reader is now the default app" = "Markdown Reader er nú sjálfgefið forrit";
+"Double-clicking a .md file will open it in Markdown Reader." = "Tvísmelltur á .md skrá opnar hana í Markdown Reader.";

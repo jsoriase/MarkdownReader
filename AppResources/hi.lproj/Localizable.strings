@@ -1,0 +1,107 @@
+/* MarkdownReader — hi */
+
+/* View modes */
+"Preview" = "पूर्वावलोकन";
+"Source" = "स्रोत";
+"Split" = "विभाजित";
+
+/* Typefaces */
+"System" = "सिस्टम";
+"Serif" = "सेरिफ़";
+"Rounded" = "गोल";
+"Monospaced" = "मोनोस्पेस्ड";
+
+/* Appearance */
+"Automatic" = "स्वचालित";
+"Light" = "हल्का";
+"Dark" = "गहरा";
+
+/* GitHub-style callouts */
+"Note" = "नोट";
+"Tip" = "सुझाव";
+"Important" = "महत्वपूर्ण";
+"Warning" = "चेतावनी";
+"Caution" = "सावधानी";
+
+/* Rendered view */
+"Copy code" = "कोड कॉपी करें";
+"Toggle task" = "कार्य चिह्नित करें";
+"Metadata" = "मेटाडेटा";
+"Not found: %@" = "नहीं मिला: %@";
+"Loading…" = "लोड हो रहा है…";
+"Empty document" = "खाली दस्तावेज़";
+"Switch to the source view (⌘2) to start writing." = "लिखना शुरू करने के लिए स्रोत दृश्य (⌘2) पर जाएँ।";
+
+/* Outline */
+"Outline" = "रूपरेखा";
+"No headings" = "कोई शीर्षक नहीं";
+"Filter headings" = "शीर्षक फ़िल्टर करें";
+
+/* Window */
+"Untitled" = "बिना शीर्षक";
+"document" = "दस्तावेज़";
+"Document" = "दस्तावेज़";
+"View mode" = "दृश्य मोड";
+"Rendered view, source code, or both" = "रेंडर किया गया दृश्य, स्रोत कोड, या दोनों";
+"Reading settings" = "पढ़ने की सेटिंग";
+"%@ words · %@ min" = "%@ शब्द · %@ मि.";
+"%@ lines" = "%@ पंक्तियाँ";
+"%@ words" = "%@ शब्द";
+"%@ characters" = "%@ अक्षर";
+"%@ headings" = "%@ शीर्षक";
+"%@ min" = "%@ मि.";
+
+/* Menus and toolbar */
+"Bigger text" = "बड़ा टेक्स्ट";
+"Smaller text" = "छोटा टेक्स्ट";
+"Actual size" = "वास्तविक आकार";
+"Actual text size" = "वास्तविक टेक्स्ट आकार";
+"Typeface" = "फ़ॉन्ट";
+"Width" = "चौड़ाई";
+"Narrow" = "सँकरा";
+"Normal" = "सामान्य";
+"Wide" = "चौड़ा";
+"Full width" = "पूर्ण चौड़ाई";
+"Status bar" = "स्टेटस बार";
+"Appearance" = "अपीयरेंस";
+"Open .md files with Markdown Reader" = ".md फ़ाइलों को Markdown Reader से खोलें";
+"Export as HTML…" = "HTML के रूप में निर्यात करें…";
+"Copy as HTML" = "HTML के रूप में कॉपी करें";
+"Reveal in Finder" = "Finder में दिखाएँ";
+"Rendered view" = "रेंडर किया गया दृश्य";
+"Source code" = "स्रोत कोड";
+"Split view" = "विभाजित दृश्य";
+"Show outline" = "रूपरेखा दिखाएँ";
+"Hide outline" = "रूपरेखा छिपाएँ";
+"Editor" = "संपादक";
+"Line numbers" = "पंक्ति संख्याएँ";
+"Wrap lines" = "पंक्तियाँ लपेटें";
+"Syntax highlighting" = "सिंटैक्स हाइलाइटिंग";
+"Bigger editor text" = "संपादक टेक्स्ट बड़ा करें";
+"Smaller editor text" = "संपादक टेक्स्ट छोटा करें";
+
+/* Settings */
+"Reading" = "पठन";
+"Typeface:" = "फ़ॉन्ट:";
+"Size:" = "आकार:";
+"Text width:" = "टेक्स्ट चौड़ाई:";
+"Narrow (620)" = "सँकरा (620)";
+"Normal (760)" = "सामान्य (760)";
+"Wide (960)" = "चौड़ा (960)";
+"Fill the window" = "विंडो भरें";
+"Appearance:" = "अपीयरेंस:";
+"Open documents in:" = "दस्तावेज़ खोलें:";
+"Show status bar" = "स्टेटस बार दिखाएँ";
+"Wrap long lines" = "लंबी पंक्तियाँ लपेटें";
+"Highlight Markdown syntax" = "Markdown सिंटैक्स हाइलाइट करें";
+"Smart quotes and other automatic substitutions are always off, so the Markdown is never altered." = "स्मार्ट उद्धरण और अन्य स्वतः प्रतिस्थापन हमेशा बंद रहते हैं, इसलिए Markdown कभी बदला नहीं जाता।";
+"The quick brown fox jumps over the lazy dog." = "फुर्तीली भूरी लोमड़ी आलसी कुत्ते पर कूदती है।";
+"Markdown Reader opens .md files" = "Markdown Reader .md फ़ाइलें खोलता है";
+"Another app opens .md files" = "कोई अन्य ऐप .md फ़ाइलें खोलता है";
+"Applies when you double-click a file in the Finder." = "Finder में फ़ाइल पर दो बार क्लिक करने पर लागू होता है।";
+"Use this app" = "यह ऐप उपयोग करें";
+
+/* Alerts */
+"Could not change the default app" = "डिफ़ॉल्ट ऐप बदला नहीं जा सका";
+"Markdown Reader is now the default app" = "Markdown Reader अब डिफ़ॉल्ट ऐप है";
+"Double-clicking a .md file will open it in Markdown Reader." = ".md फ़ाइल पर दो बार क्लिक करने से वह Markdown Reader में खुलेगी।";

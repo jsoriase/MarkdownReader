@@ -1,0 +1,107 @@
+/* MarkdownReader — lv */
+
+/* View modes */
+"Preview" = "Priekšskatījums";
+"Source" = "Pirmkods";
+"Split" = "Sadalīts";
+
+/* Typefaces */
+"System" = "Sistēma";
+"Serif" = "Serifs";
+"Rounded" = "Noapaļots";
+"Monospaced" = "Fiksēta platuma";
+
+/* Appearance */
+"Automatic" = "Automātiski";
+"Light" = "Gaišs";
+"Dark" = "Tumšs";
+
+/* GitHub-style callouts */
+"Note" = "Piezīme";
+"Tip" = "Padoms";
+"Important" = "Svarīgi";
+"Warning" = "Brīdinājums";
+"Caution" = "Uzmanību";
+
+/* Rendered view */
+"Copy code" = "Kopēt kodu";
+"Toggle task" = "Pārslēgt uzdevumu";
+"Metadata" = "Metadati";
+"Not found: %@" = "Nav atrasts: %@";
+"Loading…" = "Ielādē…";
+"Empty document" = "Tukšs dokuments";
+"Switch to the source view (⌘2) to start writing." = "Pārslēdzieties uz pirmkoda skatu (⌘2), lai sāktu rakstīt.";
+
+/* Outline */
+"Outline" = "Satura rādītājs";
+"No headings" = "Nav virsrakstu";
+"Filter headings" = "Filtrēt virsrakstus";
+
+/* Window */
+"Untitled" = "Bez nosaukuma";
+"document" = "dokuments";
+"Document" = "Dokuments";
+"View mode" = "Skata režīms";
+"Rendered view, source code, or both" = "Renderēts skats, pirmkods vai abi";
+"Reading settings" = "Lasīšanas iestatījumi";
+"%@ words · %@ min" = "%@ vārdi · %@ min";
+"%@ lines" = "%@ rindiņas";
+"%@ words" = "%@ vārdi";
+"%@ characters" = "%@ rakstzīmes";
+"%@ headings" = "%@ virsraksti";
+"%@ min" = "%@ min";
+
+/* Menus and toolbar */
+"Bigger text" = "Lielāks teksts";
+"Smaller text" = "Mazāks teksts";
+"Actual size" = "Patiesais izmērs";
+"Actual text size" = "Patiesais teksta izmērs";
+"Typeface" = "Burtveidols";
+"Width" = "Platums";
+"Narrow" = "Šaurs";
+"Normal" = "Normāls";
+"Wide" = "Plats";
+"Full width" = "Pilns platums";
+"Status bar" = "Statusa josla";
+"Appearance" = "Izskats";
+"Open .md files with Markdown Reader" = "Atvērt .md failus ar Markdown Reader";
+"Export as HTML…" = "Eksportēt kā HTML…";
+"Copy as HTML" = "Kopēt kā HTML";
+"Reveal in Finder" = "Rādīt Finder";
+"Rendered view" = "Renderēts skats";
+"Source code" = "Pirmkods";
+"Split view" = "Sadalīts skats";
+"Show outline" = "Rādīt satura rādītāju";
+"Hide outline" = "Slēpt satura rādītāju";
+"Editor" = "Redaktors";
+"Line numbers" = "Rindu numuri";
+"Wrap lines" = "Lauzt rindas";
+"Syntax highlighting" = "Sintakses izcelšana";
+"Bigger editor text" = "Lielāks redaktora teksts";
+"Smaller editor text" = "Mazāks redaktora teksts";
+
+/* Settings */
+"Reading" = "Lasīšana";
+"Typeface:" = "Burtveidols:";
+"Size:" = "Izmērs:";
+"Text width:" = "Teksta platums:";
+"Narrow (620)" = "Šaurs (620)";
+"Normal (760)" = "Normāls (760)";
+"Wide (960)" = "Plats (960)";
+"Fill the window" = "Aizpildīt logu";
+"Appearance:" = "Izskats:";
+"Open documents in:" = "Atvērt dokumentus:";
+"Show status bar" = "Rādīt statusa joslu";
+"Wrap long lines" = "Lauzt garās rindas";
+"Highlight Markdown syntax" = "Izcelt Markdown sintaksi";
+"Smart quotes and other automatic substitutions are always off, so the Markdown is never altered." = "Viedās pēdiņas un citi automātiskie aizstājumi vienmēr ir izslēgti, lai Markdown netiktu mainīts.";
+"The quick brown fox jumps over the lazy dog." = "Muļķa hipiji mēģina brīvi nogaršot celofāna žņaudzējčūsku.";
+"Markdown Reader opens .md files" = "Markdown Reader atver .md failus";
+"Another app opens .md files" = "Cita lietotne atver .md failus";
+"Applies when you double-click a file in the Finder." = "Attiecas, veicot dubultklikšķi uz faila Finder.";
+"Use this app" = "Izmantot šo lietotni";
+
+/* Alerts */
+"Could not change the default app" = "Neizdevās mainīt noklusējuma lietotni";
+"Markdown Reader is now the default app" = "Markdown Reader tagad ir noklusējuma lietotne";
+"Double-clicking a .md file will open it in Markdown Reader." = "Veicot dubultklikšķi uz .md faila, tas tiks atvērts programmā Markdown Reader.";

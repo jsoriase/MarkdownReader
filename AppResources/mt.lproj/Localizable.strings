@@ -1,0 +1,107 @@
+/* MarkdownReader — mt */
+
+/* View modes */
+"Preview" = "Previżjoni";
+"Source" = "Sors";
+"Split" = "Maqsum";
+
+/* Typefaces */
+"System" = "Sistema";
+"Serif" = "Serif";
+"Rounded" = "Arrotondat";
+"Monospaced" = "Monospazjat";
+
+/* Appearance */
+"Automatic" = "Awtomatiku";
+"Light" = "Ċar";
+"Dark" = "Skur";
+
+/* GitHub-style callouts */
+"Note" = "Nota";
+"Tip" = "Parir";
+"Important" = "Importanti";
+"Warning" = "Twissija";
+"Caution" = "Attenzjoni";
+
+/* Rendered view */
+"Copy code" = "Ikkopja l-kodiċi";
+"Toggle task" = "Aqleb il-kompitu";
+"Metadata" = "Metadata";
+"Not found: %@" = "Ma nstabx: %@";
+"Loading…" = "Qed jitgħabba…";
+"Empty document" = "Dokument vojt";
+"Switch to the source view (⌘2) to start writing." = "Aqleb għall-veduta tas-sors (⌘2) biex tibda tikteb.";
+
+/* Outline */
+"Outline" = "Kontorn";
+"No headings" = "L-ebda intestatura";
+"Filter headings" = "Iffiltra l-intestaturi";
+
+/* Window */
+"Untitled" = "Bla titlu";
+"document" = "dokument";
+"Document" = "Dokument";
+"View mode" = "Mod tal-vista";
+"Rendered view, source code, or both" = "Veduta rrenderizzata, kodiċi tas-sors, jew it-tnejn";
+"Reading settings" = "Issettjar tal-qari";
+"%@ words · %@ min" = "%@ kelmiet · %@ min";
+"%@ lines" = "%@ linji";
+"%@ words" = "%@ kliem";
+"%@ characters" = "%@ karattri";
+"%@ headings" = "%@ intestaturi";
+"%@ min" = "%@ min";
+
+/* Menus and toolbar */
+"Bigger text" = "Test akbar";
+"Smaller text" = "Test iżgħar";
+"Actual size" = "Daqs attwali";
+"Actual text size" = "Daqs attwali tat-test";
+"Typeface" = "Tipa";
+"Width" = "Wisa’";
+"Narrow" = "Dejjaq";
+"Normal" = "Normali";
+"Wide" = "Wiesa’";
+"Full width" = "Wisa’ sħiħa";
+"Status bar" = "Bar tal-istatus";
+"Appearance" = "Dehra";
+"Open .md files with Markdown Reader" = "Iftaħ fajls .md b’Markdown Reader";
+"Export as HTML…" = "Esporta bħala HTML…";
+"Copy as HTML" = "Ikkopja bħala HTML";
+"Reveal in Finder" = "Uri fil-Finder";
+"Rendered view" = "Veduta rrenderizzata";
+"Source code" = "Kodiċi tas-sors";
+"Split view" = "Veduta maqsuma";
+"Show outline" = "Uri l-kontorn";
+"Hide outline" = "Aħbi l-kontorn";
+"Editor" = "Editur";
+"Line numbers" = "Numri tal-linji";
+"Wrap lines" = "Kebbeb il-linji";
+"Syntax highlighting" = "Enfasi tas-sintassi";
+"Bigger editor text" = "Test akbar tal-editur";
+"Smaller editor text" = "Test iżgħar tal-editur";
+
+/* Settings */
+"Reading" = "Qari";
+"Typeface:" = "Tipa:";
+"Size:" = "Daqs:";
+"Text width:" = "Wisa’ tat-test:";
+"Narrow (620)" = "Dejjaq (620)";
+"Normal (760)" = "Normali (760)";
+"Wide (960)" = "Wiesa’ (960)";
+"Fill the window" = "Imtela t-tieqa";
+"Appearance:" = "Dehra:";
+"Open documents in:" = "Iftaħ id-dokumenti f’:";
+"Show status bar" = "Uri l-bar tal-istatus";
+"Wrap long lines" = "Kebbeb il-linji twal";
+"Highlight Markdown syntax" = "Enfasizza s-sintassi Markdown";
+"Smart quotes and other automatic substitutions are always off, so the Markdown is never altered." = "Il-virgoletti intelliġenti u sostituzzjonijiet awtomatiċi oħra huma dejjem mitfija, sabiex il-Markdown qatt ma jinbidel.";
+"The quick brown fox jumps over the lazy dog." = "Il-ġurnata kienet xemxija u ż-żiemel ħares lejn iċ-ċpar ta’ fuq l-għolja.";
+"Markdown Reader opens .md files" = "Markdown Reader jiftaħ fajls .md";
+"Another app opens .md files" = "App oħra tiftaħ fajls .md";
+"Applies when you double-click a file in the Finder." = "Tapplika meta tikklikkja darbtejn fajl fil-Finder.";
+"Use this app" = "Uża din l-app";
+
+/* Alerts */
+"Could not change the default app" = "Ma setgħetx tinbidel l-app default";
+"Markdown Reader is now the default app" = "Markdown Reader issa hu l-app default";
+"Double-clicking a .md file will open it in Markdown Reader." = "Jekk tikklikkja darbtejn fajl .md, jinfetaħ f’Markdown Reader.";

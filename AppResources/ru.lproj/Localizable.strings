@@ -1,0 +1,107 @@
+/* MarkdownReader — ru */
+/* View modes */
+"Preview" = "Просмотр";
+"Source" = "Код";
+"Split" = "Разделённый";
+
+/* Typefaces */
+"System" = "Системный";
+"Serif" = "С засечками";
+"Rounded" = "Скруглённый";
+"Monospaced" = "Моноширинный";
+
+/* Appearance */
+"Automatic" = "Авто";
+"Light" = "Светлая";
+"Dark" = "Тёмная";
+
+/* GitHub-style callouts */
+"Note" = "Примечание";
+"Tip" = "Совет";
+"Important" = "Важно";
+"Warning" = "Предупреждение";
+"Caution" = "Осторожно";
+
+/* Rendered view */
+"Copy code" = "Скопировать код";
+"Toggle task" = "Отметить задачу";
+"Metadata" = "Метаданные";
+"Not found: %@" = "Не найдено: %@";
+"Loading…" = "Загрузка…";
+"Empty document" = "Пустой документ";
+"Switch to the source view (⌘2) to start writing." = "Переключитесь в режим исходного кода (⌘2), чтобы начать писать.";
+
+/* Outline */
+"Outline" = "Оглавление";
+"No headings" = "Нет заголовков";
+"Filter headings" = "Фильтровать заголовки";
+
+/* Window */
+"Untitled" = "Без названия";
+"document" = "документ";
+"Document" = "Документ";
+"View mode" = "Режим";
+"Rendered view, source code, or both" = "Просмотр, исходный код или оба";
+"Reading settings" = "Настройки чтения";
+"%@ words · %@ min" = "%@ слов · %@ мин";
+"%@ lines" = "%@ строк";
+"%@ words" = "%@ слов";
+"%@ characters" = "%@ символов";
+"%@ headings" = "%@ заголовков";
+"%@ min" = "%@ мин";
+
+/* Menus and toolbar */
+"Bigger text" = "Увеличить текст";
+"Smaller text" = "Уменьшить текст";
+"Actual size" = "Исходный размер";
+"Actual text size" = "Исходный размер текста";
+"Typeface" = "Шрифт";
+"Width" = "Ширина";
+"Narrow" = "Узкий";
+"Normal" = "Обычный";
+"Wide" = "Широкий";
+"Full width" = "На всю ширину";
+"Status bar" = "Строка состояния";
+"Appearance" = "Оформление";
+"Open .md files with Markdown Reader" = "Открывать файлы .md в Markdown Reader";
+"Export as HTML…" = "Экспортировать как HTML…";
+"Copy as HTML" = "Скопировать как HTML";
+"Reveal in Finder" = "Показать в Finder";
+"Rendered view" = "Просмотр";
+"Source code" = "Исходный код";
+"Split view" = "Разделённый вид";
+"Show outline" = "Показать оглавление";
+"Hide outline" = "Скрыть оглавление";
+"Editor" = "Редактор";
+"Line numbers" = "Номера строк";
+"Wrap lines" = "Переносить строки";
+"Syntax highlighting" = "Подсветка синтаксиса";
+"Bigger editor text" = "Увеличить текст редактора";
+"Smaller editor text" = "Уменьшить текст редактора";
+
+/* Settings */
+"Reading" = "Чтение";
+"Typeface:" = "Шрифт:";
+"Size:" = "Размер:";
+"Text width:" = "Ширина текста:";
+"Narrow (620)" = "Узкий (620)";
+"Normal (760)" = "Обычный (760)";
+"Wide (960)" = "Широкий (960)";
+"Fill the window" = "Заполнить окно";
+"Appearance:" = "Оформление:";
+"Open documents in:" = "Открывать документы в:";
+"Show status bar" = "Показывать строку состояния";
+"Line numbers" = "Номера строк";
+"Wrap long lines" = "Переносить длинные строки";
+"Highlight Markdown syntax" = "Подсвечивать синтаксис Markdown";
+"Smart quotes and other automatic substitutions are always off, so the Markdown is never altered." = "Умные кавычки и другие автозамены всегда отключены, чтобы не изменять Markdown.";
+"The quick brown fox jumps over the lazy dog." = "Съешь же ещё этих мягких французских булок да выпей чаю.";
+"Markdown Reader opens .md files" = "Markdown Reader открывает файлы .md";
+"Another app opens .md files" = "Другое приложение открывает файлы .md";
+"Applies when you double-click a file in the Finder." = "Действует при двойном нажатии на файл в Finder.";
+"Use this app" = "Использовать это приложение";
+
+/* Alerts */
+"Could not change the default app" = "Не удалось изменить приложение по умолчанию";
+"Markdown Reader is now the default app" = "Markdown Reader теперь приложение по умолчанию";
+"Double-clicking a .md file will open it in Markdown Reader." = "Файлы .md будут открываться в Markdown Reader при двойном нажатии.";

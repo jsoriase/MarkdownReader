@@ -1,0 +1,106 @@
+/* MarkdownReader — ga */
+/* View modes */
+"Preview" = "Réamhamharc";
+"Source" = "Cód";
+"Split" = "Scoilte";
+
+/* Typefaces */
+"System" = "Córas";
+"Serif" = "Serif";
+"Rounded" = "Cruinn";
+"Monospaced" = "Aonspásáilte";
+
+/* Appearance */
+"Automatic" = "Uathoibríoch";
+"Light" = "Geal";
+"Dark" = "Dorcha";
+
+/* GitHub-style callouts */
+"Note" = "Nóta";
+"Tip" = "Leid";
+"Important" = "Tábhachtach";
+"Warning" = "Rabhadh";
+"Caution" = "Cúram";
+
+/* Rendered view */
+"Copy code" = "Cóipeáil cód";
+"Toggle task" = "Scor an tasc";
+"Metadata" = "Meiteashonraí";
+"Not found: %@" = "Níor aimsíodh: %@";
+"Loading…" = "Á lódáil…";
+"Empty document" = "Doiciméad folamh";
+"Switch to the source view (⌘2) to start writing." = "Athraigh go dtí an amharc cóid (⌘2) le tosú ag scríobh.";
+
+/* Outline */
+"Outline" = "Imlíne";
+"No headings" = "Gan ceannteidil";
+"Filter headings" = "Scag ceannteidil";
+
+/* Window */
+"Untitled" = "Gan teideal";
+"document" = "doiciméad";
+"Document" = "Doiciméad";
+"View mode" = "Mód";
+"Rendered view, source code, or both" = "Amharc rindreáilte, cód foinseach, nó an dá cheann";
+"Reading settings" = "Socruithe léitheoireachta";
+"%@ words · %@ min" = "%@ focal · %@ nóim";
+"%@ lines" = "%@ líne";
+"%@ words" = "%@ focal";
+"%@ characters" = "%@ carachtar";
+"%@ headings" = "%@ ceannteideal";
+"%@ min" = "%@ nóim";
+
+/* Menus and toolbar */
+"Bigger text" = "Méadaigh an téacs";
+"Smaller text" = "Laghdaigh an téacs";
+"Actual size" = "Fíormhéid";
+"Actual text size" = "Fíormhéid an téacs";
+"Typeface" = "Cló";
+"Width" = "Leithead";
+"Narrow" = "Caol";
+"Normal" = "Gnáth";
+"Wide" = "Leathan";
+"Full width" = "Leithead iomlán";
+"Status bar" = "Barra stádais";
+"Appearance" = "Cuma";
+"Open .md files with Markdown Reader" = "Oscail comhaid .md le Markdown Reader";
+"Export as HTML…" = "Easpórtáil mar HTML…";
+"Copy as HTML" = "Cóipeáil mar HTML";
+"Reveal in Finder" = "Taispeáin sa Finder";
+"Rendered view" = "Amharc rindreáilte";
+"Source code" = "Cód foinseach";
+"Split view" = "Amharc scoilte";
+"Show outline" = "Taispeáin an imlíne";
+"Hide outline" = "Folaigh an imlíne";
+"Editor" = "Eagarthóir";
+"Line numbers" = "Uimhreacha líne";
+"Wrap lines" = "Timfhill línte";
+"Syntax highlighting" = "Aibhsiú comhréire";
+"Bigger editor text" = "Méadaigh téacs an eagarthóra";
+"Smaller editor text" = "Laghdaigh téacs an eagarthóra";
+
+/* Settings */
+"Reading" = "Léitheoireacht";
+"Typeface:" = "Cló:";
+"Size:" = "Méid:";
+"Text width:" = "Leithead an téacs:";
+"Narrow (620)" = "Caol (620)";
+"Normal (760)" = "Gnáth (760)";
+"Wide (960)" = "Leathan (960)";
+"Fill the window" = "Líon an fhuinneog";
+"Appearance:" = "Cuma:";
+"Open documents in:" = "Oscail doiciméid i:";
+"Show status bar" = "Taispeáin an barra stádais";
+"Wrap long lines" = "Timfhill línte fada";
+"Highlight Markdown syntax" = "Aibhsigh comhréir Markdown";
+"Smart quotes and other automatic substitutions are always off, so the Markdown is never altered." = "Bíonn comharthaí athfhriotail cliste agus ionadaithe uathoibríocha eile múchta i gcónaí, ionas nach n-athraítear an Markdown go deo.";
+"The quick brown fox jumps over the lazy dog." = "D’fhuascail Íosa Úrmhac na hÓighe Beannaithe pór Éava agus Ádhaimh.";
+"Markdown Reader opens .md files" = "Osclaíonn Markdown Reader comhaid .md";
+"Another app opens .md files" = "Osclaíonn aip eile comhaid .md";
+"Applies when you double-click a file in the Finder." = "Baineann sé seo le cliceáil faoi dhó ar chomhad sa Finder.";
+"Use this app" = "Úsáid an aip seo";
+
+/* Alerts */
+"Could not change the default app" = "Níorbh fhéidir an aip réamhshocraithe a athrú";
+"Markdown Reader is now the default app" = "Is é Markdown Reader an aip réamhshocraithe anois";
+"Double-clicking a .md file will open it in Markdown Reader." = "Osclófar comhad .md i Markdown Reader le cliceáil faoi dhó.";

@@ -1,0 +1,107 @@
+/* MarkdownReader — hu */
+
+/* View modes */
+"Preview" = "Előnézet";
+"Source" = "Forrás";
+"Split" = "Osztott";
+
+/* Typefaces */
+"System" = "Rendszer";
+"Serif" = "Serif";
+"Rounded" = "Kerekített";
+"Monospaced" = "Fix szélességű";
+
+/* Appearance */
+"Automatic" = "Automatikus";
+"Light" = "Világos";
+"Dark" = "Sötét";
+
+/* GitHub-style callouts */
+"Note" = "Megjegyzés";
+"Tip" = "Tipp";
+"Important" = "Fontos";
+"Warning" = "Figyelmeztetés";
+"Caution" = "Vigyázat";
+
+/* Rendered view */
+"Copy code" = "Kód másolása";
+"Toggle task" = "Feladat megjelölése";
+"Metadata" = "Metaadatok";
+"Not found: %@" = "Nem található: %@";
+"Loading…" = "Betöltés…";
+"Empty document" = "Üres dokumentum";
+"Switch to the source view (⌘2) to start writing." = "Váltson forrásnézetre (⌘2) az írás megkezdéséhez.";
+
+/* Outline */
+"Outline" = "Vázlat";
+"No headings" = "Nincsenek címsorok";
+"Filter headings" = "Címsorok szűrése";
+
+/* Window */
+"Untitled" = "Névtelen";
+"document" = "dokumentum";
+"Document" = "Dokumentum";
+"View mode" = "Nézet mód";
+"Rendered view, source code, or both" = "Formázott nézet, forráskód vagy mindkettő";
+"Reading settings" = "Olvasási beállítások";
+"%@ words · %@ min" = "%@ szó · %@ perc";
+"%@ lines" = "%@ sor";
+"%@ words" = "%@ szó";
+"%@ characters" = "%@ karakter";
+"%@ headings" = "%@ címsor";
+"%@ min" = "%@ perc";
+
+/* Menus and toolbar */
+"Bigger text" = "Nagyobb szöveg";
+"Smaller text" = "Kisebb szöveg";
+"Actual size" = "Tényleges méret";
+"Actual text size" = "Tényleges szövegméret";
+"Typeface" = "Betűtípus";
+"Width" = "Szélesség";
+"Narrow" = "Keskeny";
+"Normal" = "Normál";
+"Wide" = "Széles";
+"Full width" = "Teljes szélesség";
+"Status bar" = "Állapotsor";
+"Appearance" = "Megjelenés";
+"Open .md files with Markdown Reader" = ".md fájlok megnyitása Markdown Readerrel";
+"Export as HTML…" = "Exportálás HTML-ként…";
+"Copy as HTML" = "Másolás HTML-ként";
+"Reveal in Finder" = "Felfedés a Finderben";
+"Rendered view" = "Formázott nézet";
+"Source code" = "Forráskód";
+"Split view" = "Osztott nézet";
+"Show outline" = "Vázlat megjelenítése";
+"Hide outline" = "Vázlat elrejtése";
+"Editor" = "Szerkesztő";
+"Line numbers" = "Sorszámok";
+"Wrap lines" = "Sortörés";
+"Syntax highlighting" = "Szintaxiskiemelés";
+"Bigger editor text" = "Nagyobb szerkesztőszöveg";
+"Smaller editor text" = "Kisebb szerkesztőszöveg";
+
+/* Settings */
+"Reading" = "Olvasás";
+"Typeface:" = "Betűtípus:";
+"Size:" = "Méret:";
+"Text width:" = "Szövegszélesség:";
+"Narrow (620)" = "Keskeny (620)";
+"Normal (760)" = "Normál (760)";
+"Wide (960)" = "Széles (960)";
+"Fill the window" = "Ablak kitöltése";
+"Appearance:" = "Megjelenés:";
+"Open documents in:" = "Dokumentumok megnyitása:";
+"Show status bar" = "Állapotsor megjelenítése";
+"Wrap long lines" = "Hosszú sorok tördelése";
+"Highlight Markdown syntax" = "Markdown-szintaxis kiemelése";
+"Smart quotes and other automatic substitutions are always off, so the Markdown is never altered." = "Az okos idézőjelek és más automatikus helyettesítések mindig ki vannak kapcsolva, így a Markdown soha nem módosul.";
+"The quick brown fox jumps over the lazy dog." = "Árvíztűrő tükörfúrógép.";
+"Markdown Reader opens .md files" = "A Markdown Reader nyitja meg a .md fájlokat";
+"Another app opens .md files" = "Másik app nyitja meg a .md fájlokat";
+"Applies when you double-click a file in the Finder." = "A Finderben duplán kattintott fájlokra vonatkozik.";
+"Use this app" = "Ennek az appnak a használata";
+
+/* Alerts */
+"Could not change the default app" = "Nem sikerült módosítani az alapértelmezett appot";
+"Markdown Reader is now the default app" = "A Markdown Reader mostantól az alapértelmezett app";
+"Double-clicking a .md file will open it in Markdown Reader." = "Dupla kattintásra a .md fájl a Markdown Readerben nyílik meg.";

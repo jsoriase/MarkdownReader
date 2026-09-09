@@ -1,0 +1,107 @@
+/* MarkdownReader — ro */
+/* View modes */
+"Preview" = "Previzualizare";
+"Source" = "Cod";
+"Split" = "Divizat";
+
+/* Typefaces */
+"System" = "Sistem";
+"Serif" = "Serif";
+"Rounded" = "Rotunjit";
+"Monospaced" = "Monospațiat";
+
+/* Appearance */
+"Automatic" = "Automat";
+"Light" = "Deschis";
+"Dark" = "Închis";
+
+/* GitHub-style callouts */
+"Note" = "Notă";
+"Tip" = "Sfat";
+"Important" = "Important";
+"Warning" = "Avertisment";
+"Caution" = "Precauție";
+
+/* Rendered view */
+"Copy code" = "Copiază codul";
+"Toggle task" = "Bifează sarcina";
+"Metadata" = "Metadate";
+"Not found: %@" = "Nu s-a găsit: %@";
+"Loading…" = "Se încarcă…";
+"Empty document" = "Document gol";
+"Switch to the source view (⌘2) to start writing." = "Comută la vizualizarea sursă (⌘2) pentru a începe să scrii.";
+
+/* Outline */
+"Outline" = "Cuprins";
+"No headings" = "Fără titluri";
+"Filter headings" = "Filtrează titlurile";
+
+/* Window */
+"Untitled" = "Fără titlu";
+"document" = "document";
+"Document" = "Document";
+"View mode" = "Mod";
+"Rendered view, source code, or both" = "Vizualizare randată, cod sursă sau ambele";
+"Reading settings" = "Setări de citire";
+"%@ words · %@ min" = "%@ cuvinte · %@ min";
+"%@ lines" = "%@ linii";
+"%@ words" = "%@ cuvinte";
+"%@ characters" = "%@ caractere";
+"%@ headings" = "%@ titluri";
+"%@ min" = "%@ min";
+
+/* Menus and toolbar */
+"Bigger text" = "Mărește textul";
+"Smaller text" = "Micșorează textul";
+"Actual size" = "Dimensiune reală";
+"Actual text size" = "Dimensiune reală a textului";
+"Typeface" = "Font";
+"Width" = "Lățime";
+"Narrow" = "Îngust";
+"Normal" = "Normal";
+"Wide" = "Lat";
+"Full width" = "Lățime completă";
+"Status bar" = "Bară de stare";
+"Appearance" = "Aspect";
+"Open .md files with Markdown Reader" = "Deschide fișierele .md cu Markdown Reader";
+"Export as HTML…" = "Exportă ca HTML…";
+"Copy as HTML" = "Copiază ca HTML";
+"Reveal in Finder" = "Arată în Finder";
+"Rendered view" = "Vizualizare randată";
+"Source code" = "Cod sursă";
+"Split view" = "Vizualizare divizată";
+"Show outline" = "Arată cuprinsul";
+"Hide outline" = "Ascunde cuprinsul";
+"Editor" = "Editor";
+"Line numbers" = "Numere de linie";
+"Wrap lines" = "Încadrează liniile";
+"Syntax highlighting" = "Evidențiere sintaxă";
+"Bigger editor text" = "Mărește textul editorului";
+"Smaller editor text" = "Micșorează textul editorului";
+
+/* Settings */
+"Reading" = "Citire";
+"Typeface:" = "Font:";
+"Size:" = "Dimensiune:";
+"Text width:" = "Lățime text:";
+"Narrow (620)" = "Îngust (620)";
+"Normal (760)" = "Normal (760)";
+"Wide (960)" = "Lat (960)";
+"Fill the window" = "Umple fereastra";
+"Appearance:" = "Aspect:";
+"Open documents in:" = "La deschiderea unui document:";
+"Show status bar" = "Arată bara de stare";
+"Line numbers" = "Numere de linie";
+"Wrap long lines" = "Încadrează liniile lungi";
+"Highlight Markdown syntax" = "Evidențiază sintaxa Markdown";
+"Smart quotes and other automatic substitutions are always off, so the Markdown is never altered." = "Ghilimelele inteligente și alte înlocuiri automate sunt întotdeauna dezactivate, pentru a nu modifica niciodată Markdown-ul.";
+"The quick brown fox jumps over the lazy dog." = "Muzicologă în bej vând whisky și tequila, preț fix.";
+"Markdown Reader opens .md files" = "Markdown Reader deschide fișierele .md";
+"Another app opens .md files" = "Altă aplicație deschide fișierele .md";
+"Applies when you double-click a file in the Finder." = "Se aplică la dublu-clic pe un fișier în Finder.";
+"Use this app" = "Folosește această aplicație";
+
+/* Alerts */
+"Could not change the default app" = "Nu s-a putut schimba aplicația implicită";
+"Markdown Reader is now the default app" = "Markdown Reader este acum aplicația implicită";
+"Double-clicking a .md file will open it in Markdown Reader." = "Fișierele .md se vor deschide în Markdown Reader la dublu-clic.";

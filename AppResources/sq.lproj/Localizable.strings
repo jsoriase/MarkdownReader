@@ -1,0 +1,106 @@
+/* MarkdownReader — sq */
+/* View modes */
+"Preview" = "Parapamje";
+"Source" = "Kodi";
+"Split" = "I ndarë";
+
+/* Typefaces */
+"System" = "Sistemi";
+"Serif" = "Serif";
+"Rounded" = "E rrumbullakosur";
+"Monospaced" = "Me hapësirë fikse";
+
+/* Appearance */
+"Automatic" = "Automatike";
+"Light" = "E çelët";
+"Dark" = "E errët";
+
+/* GitHub-style callouts */
+"Note" = "Shënim";
+"Tip" = "Këshillë";
+"Important" = "E rëndësishme";
+"Warning" = "Paralajmërim";
+"Caution" = "Kujdes";
+
+/* Rendered view */
+"Copy code" = "Kopjo kodin";
+"Toggle task" = "Shëno detyrën";
+"Metadata" = "Metadatat";
+"Not found: %@" = "Nuk u gjet: %@";
+"Loading…" = "Po ngarkohet…";
+"Empty document" = "Dokument bosh";
+"Switch to the source view (⌘2) to start writing." = "Kalo te pamja e kodit (⌘2) për të filluar shkrimin.";
+
+/* Outline */
+"Outline" = "Skica";
+"No headings" = "Pa tituj";
+"Filter headings" = "Filtro titujt";
+
+/* Window */
+"Untitled" = "Pa titull";
+"document" = "dokument";
+"Document" = "Dokumenti";
+"View mode" = "Mënyra";
+"Rendered view, source code, or both" = "Pamja e formatuar, kodi burimor ose të dyja";
+"Reading settings" = "Cilësimet e leximit";
+"%@ words · %@ min" = "%@ fjalë · %@ min";
+"%@ lines" = "%@ rreshta";
+"%@ words" = "%@ fjalë";
+"%@ characters" = "%@ karaktere";
+"%@ headings" = "%@ tituj";
+"%@ min" = "%@ min";
+
+/* Menus and toolbar */
+"Bigger text" = "Tekst më i madh";
+"Smaller text" = "Tekst më i vogël";
+"Actual size" = "Madhësia origjinale";
+"Actual text size" = "Madhësia origjinale e tekstit";
+"Typeface" = "Tipografia";
+"Width" = "Gjerësia";
+"Narrow" = "E ngushtë";
+"Normal" = "Normale";
+"Wide" = "E gjerë";
+"Full width" = "E plotë";
+"Status bar" = "Shiriti i statusit";
+"Appearance" = "Pamja";
+"Open .md files with Markdown Reader" = "Hap skedarët .md me Markdown Reader";
+"Export as HTML…" = "Eksporto si HTML…";
+"Copy as HTML" = "Kopjo si HTML";
+"Reveal in Finder" = "Shfaq në Finder";
+"Rendered view" = "Pamja e formatuar";
+"Source code" = "Kodi burimor";
+"Split view" = "Pamja e ndarë";
+"Show outline" = "Shfaq skicën";
+"Hide outline" = "Fshih skicën";
+"Editor" = "Redaktori";
+"Line numbers" = "Numrat e rreshtave";
+"Wrap lines" = "Mbështill rreshtat";
+"Syntax highlighting" = "Theksimi i sintaksës";
+"Bigger editor text" = "Rrit tekstin e redaktorit";
+"Smaller editor text" = "Zvogëlo tekstin e redaktorit";
+
+/* Settings */
+"Reading" = "Leximi";
+"Typeface:" = "Tipografia:";
+"Size:" = "Madhësia:";
+"Text width:" = "Gjerësia e tekstit:";
+"Narrow (620)" = "E ngushtë (620)";
+"Normal (760)" = "Normale (760)";
+"Wide (960)" = "E gjerë (960)";
+"Fill the window" = "Mbush dritaren";
+"Appearance:" = "Pamja:";
+"Open documents in:" = "Hap dokumentet në:";
+"Show status bar" = "Shfaq shiritin e statusit";
+"Wrap long lines" = "Mbështill rreshtat e gjatë";
+"Highlight Markdown syntax" = "Thekso sintaksën Markdown";
+"Smart quotes and other automatic substitutions are always off, so the Markdown is never altered." = "Thonjëzat inteligjente dhe zëvendësimet e tjera automatike janë gjithmonë të çaktivizuara, kështu që Markdown nuk ndryshohet kurrë.";
+"The quick brown fox jumps over the lazy dog." = "Dhelpra e shpejtë ngjyrë kafe kërcen mbi qenin dembel.";
+"Markdown Reader opens .md files" = "Markdown Reader hap skedarët .md";
+"Another app opens .md files" = "Një app tjetër hap skedarët .md";
+"Applies when you double-click a file in the Finder." = "Vlen kur klikoni dy herë një skedar në Finder.";
+"Use this app" = "Përdor këtë app";
+
+/* Alerts */
+"Could not change the default app" = "Nuk mund të ndryshohej app-i i parazgjedhur";
+"Markdown Reader is now the default app" = "Markdown Reader tani është app-i i parazgjedhur";
+"Double-clicking a .md file will open it in Markdown Reader." = "Klikimi i dyfishtë mbi një skedar .md do ta hapë atë në Markdown Reader.";

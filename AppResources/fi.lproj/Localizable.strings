@@ -1,0 +1,106 @@
+/* MarkdownReader — fi */
+/* View modes */
+"Preview" = "Esikatselu";
+"Source" = "Koodi";
+"Split" = "Jaettu";
+
+/* Typefaces */
+"System" = "Järjestelmä";
+"Serif" = "Serif";
+"Rounded" = "Pyöristetty";
+"Monospaced" = "Tasalevyinen";
+
+/* Appearance */
+"Automatic" = "Automaattinen";
+"Light" = "Vaalea";
+"Dark" = "Tumma";
+
+/* GitHub-style callouts */
+"Note" = "Huomautus";
+"Tip" = "Vihje";
+"Important" = "Tärkeää";
+"Warning" = "Varoitus";
+"Caution" = "Huomio";
+
+/* Rendered view */
+"Copy code" = "Kopioi koodi";
+"Toggle task" = "Merkitse tehtävä";
+"Metadata" = "Metatiedot";
+"Not found: %@" = "Ei löytynyt: %@";
+"Loading…" = "Ladataan…";
+"Empty document" = "Tyhjä dokumentti";
+"Switch to the source view (⌘2) to start writing." = "Vaihda koodinäkymään (⌘2) aloittaaksesi kirjoittamisen.";
+
+/* Outline */
+"Outline" = "Sisällys";
+"No headings" = "Ei otsikoita";
+"Filter headings" = "Suodata otsikoita";
+
+/* Window */
+"Untitled" = "Nimetön";
+"document" = "dokumentti";
+"Document" = "Dokumentti";
+"View mode" = "Tila";
+"Rendered view, source code, or both" = "Muotoiltu näkymä, lähdekoodi tai molemmat";
+"Reading settings" = "Lukemisasetukset";
+"%@ words · %@ min" = "%@ sanaa · %@ min";
+"%@ lines" = "%@ riviä";
+"%@ words" = "%@ sanaa";
+"%@ characters" = "%@ merkkiä";
+"%@ headings" = "%@ otsikkoa";
+"%@ min" = "%@ min";
+
+/* Menus and toolbar */
+"Bigger text" = "Suurenna tekstiä";
+"Smaller text" = "Pienennä tekstiä";
+"Actual size" = "Todellinen koko";
+"Actual text size" = "Todellinen tekstikoko";
+"Typeface" = "Kirjasin";
+"Width" = "Leveys";
+"Narrow" = "Kapea";
+"Normal" = "Normaali";
+"Wide" = "Leveä";
+"Full width" = "Täysleveys";
+"Status bar" = "Tilarivi";
+"Appearance" = "Ulkoasu";
+"Open .md files with Markdown Reader" = "Avaa .md-tiedostot Markdown Readerilla";
+"Export as HTML…" = "Vie HTML-muodossa…";
+"Copy as HTML" = "Kopioi HTML-muodossa";
+"Reveal in Finder" = "Näytä Finderissa";
+"Rendered view" = "Muotoiltu näkymä";
+"Source code" = "Lähdekoodi";
+"Split view" = "Jaettu näkymä";
+"Show outline" = "Näytä sisällys";
+"Hide outline" = "Piilota sisällys";
+"Editor" = "Editori";
+"Line numbers" = "Rivinumerot";
+"Wrap lines" = "Rivitä rivit";
+"Syntax highlighting" = "Syntaksin korostus";
+"Bigger editor text" = "Suurenna editorin tekstiä";
+"Smaller editor text" = "Pienennä editorin tekstiä";
+
+/* Settings */
+"Reading" = "Lukeminen";
+"Typeface:" = "Kirjasin:";
+"Size:" = "Koko:";
+"Text width:" = "Tekstin leveys:";
+"Narrow (620)" = "Kapea (620)";
+"Normal (760)" = "Normaali (760)";
+"Wide (960)" = "Leveä (960)";
+"Fill the window" = "Täytä ikkuna";
+"Appearance:" = "Ulkoasu:";
+"Open documents in:" = "Avaa dokumentit:";
+"Show status bar" = "Näytä tilarivi";
+"Wrap long lines" = "Rivitä pitkät rivit";
+"Highlight Markdown syntax" = "Korosta Markdown-syntaksi";
+"Smart quotes and other automatic substitutions are always off, so the Markdown is never altered." = "Älykkäät lainausmerkit ja muut automaattiset korvaukset ovat aina pois päältä, jotta Markdownia ei koskaan muuteta.";
+"The quick brown fox jumps over the lazy dog." = "Wieniläinen sioux’ta puhuva ökyzombi diggaa Åsan roquefort-tacoja.";
+"Markdown Reader opens .md files" = "Markdown Reader avaa .md-tiedostot";
+"Another app opens .md files" = "Muu appi avaa .md-tiedostot";
+"Applies when you double-click a file in the Finder." = "Koskee tiedoston kaksoisklikkausta Finderissa.";
+"Use this app" = "Käytä tätä appia";
+
+/* Alerts */
+"Could not change the default app" = "Oletusappia ei voitu vaihtaa";
+"Markdown Reader is now the default app" = "Markdown Reader on nyt oletusappi";
+"Double-clicking a .md file will open it in Markdown Reader." = ".md-tiedoston kaksoisklikkaus avaa sen Markdown Readerissa.";

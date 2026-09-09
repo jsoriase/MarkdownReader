@@ -1,0 +1,107 @@
+/* MarkdownReader — ca */
+/* View modes */
+"Preview" = "Vista prèvia";
+"Source" = "Codi";
+"Split" = "Dividit";
+
+/* Typefaces */
+"System" = "Sistema";
+"Serif" = "Serif";
+"Rounded" = "Arrodonida";
+"Monospaced" = "Monoespaiada";
+
+/* Appearance */
+"Automatic" = "Automàtic";
+"Light" = "Clar";
+"Dark" = "Fosc";
+
+/* GitHub-style callouts */
+"Note" = "Nota";
+"Tip" = "Consell";
+"Important" = "Important";
+"Warning" = "Avís";
+"Caution" = "Precaució";
+
+/* Rendered view */
+"Copy code" = "Copia el codi";
+"Toggle task" = "Marca la tasca";
+"Metadata" = "Metadades";
+"Not found: %@" = "No s’ha trobat: %@";
+"Loading…" = "Carregant…";
+"Empty document" = "Document buit";
+"Switch to the source view (⌘2) to start writing." = "Canvia a la vista de codi (⌘2) per començar a escriure.";
+
+/* Outline */
+"Outline" = "Índex";
+"No headings" = "Sense títols";
+"Filter headings" = "Filtra els títols";
+
+/* Window */
+"Untitled" = "Sense títol";
+"document" = "document";
+"Document" = "Document";
+"View mode" = "Mode";
+"Rendered view, source code, or both" = "Vista formatejada, codi font o totes dues";
+"Reading settings" = "Ajustaments de lectura";
+"%@ words · %@ min" = "%@ paraules · %@ min";
+"%@ lines" = "%@ línies";
+"%@ words" = "%@ paraules";
+"%@ characters" = "%@ caràcters";
+"%@ headings" = "%@ títols";
+"%@ min" = "%@ min";
+
+/* Menus and toolbar */
+"Bigger text" = "Augmenta el text";
+"Smaller text" = "Redueix el text";
+"Actual size" = "Mida original";
+"Actual text size" = "Mida de text original";
+"Typeface" = "Tipografia";
+"Width" = "Amplada";
+"Narrow" = "Estret";
+"Normal" = "Normal";
+"Wide" = "Ample";
+"Full width" = "Completa";
+"Status bar" = "Barra d’estat";
+"Appearance" = "Aparença";
+"Open .md files with Markdown Reader" = "Obre els .md amb el Markdown Reader";
+"Export as HTML…" = "Exporta com a HTML…";
+"Copy as HTML" = "Copia com a HTML";
+"Reveal in Finder" = "Mostra al Finder";
+"Rendered view" = "Vista formatejada";
+"Source code" = "Codi font";
+"Split view" = "Vista dividida";
+"Show outline" = "Mostra l’índex";
+"Hide outline" = "Amaga l’índex";
+"Editor" = "Editor";
+"Line numbers" = "Números de línia";
+"Wrap lines" = "Ajusta les línies";
+"Syntax highlighting" = "Ressalta la sintaxi";
+"Bigger editor text" = "Augmenta la mida de l’editor";
+"Smaller editor text" = "Redueix la mida de l’editor";
+
+/* Settings */
+"Reading" = "Lectura";
+"Typeface:" = "Tipografia:";
+"Size:" = "Mida:";
+"Text width:" = "Amplada del text:";
+"Narrow (620)" = "Estret (620)";
+"Normal (760)" = "Normal (760)";
+"Wide (960)" = "Ample (960)";
+"Fill the window" = "Omple la finestra";
+"Appearance:" = "Aparença:";
+"Open documents in:" = "En obrir un document:";
+"Show status bar" = "Mostra la barra d’estat";
+"Line numbers" = "Números de línia";
+"Wrap long lines" = "Ajusta les línies llargues";
+"Highlight Markdown syntax" = "Ressalta la sintaxi Markdown";
+"Smart quotes and other automatic substitutions are always off, so the Markdown is never altered." = "Les cometes tipogràfiques i les substitucions automàtiques estan sempre desactivades per no alterar el Markdown.";
+"The quick brown fox jumps over the lazy dog." = "Jove xef, porti whisky amb quinze glaçons d’hidrogen";
+"Markdown Reader opens .md files" = "El Markdown Reader obre els fitxers .md";
+"Another app opens .md files" = "Una altra app obre els fitxers .md";
+"Applies when you double-click a file in the Finder." = "S’aplica en fer doble clic en un fitxer al Finder.";
+"Use this app" = "Fes servir aquesta app";
+
+/* Alerts */
+"Could not change the default app" = "No s’ha pogut canviar l’app per defecte";
+"Markdown Reader is now the default app" = "El Markdown Reader ja és l’app per defecte";
+"Double-clicking a .md file will open it in Markdown Reader." = "Els fitxers .md s’obriran amb el Markdown Reader en fer-hi doble clic.";

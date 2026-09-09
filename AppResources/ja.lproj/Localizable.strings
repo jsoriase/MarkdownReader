@@ -1,0 +1,107 @@
+/* MarkdownReader — ja */
+
+/* View modes */
+"Preview" = "プレビュー";
+"Source" = "ソース";
+"Split" = "分割";
+
+/* Typefaces */
+"System" = "システム";
+"Serif" = "セリフ";
+"Rounded" = "丸ゴシック";
+"Monospaced" = "等幅";
+
+/* Appearance */
+"Automatic" = "自動";
+"Light" = "ライト";
+"Dark" = "ダーク";
+
+/* GitHub-style callouts */
+"Note" = "注記";
+"Tip" = "ヒント";
+"Important" = "重要";
+"Warning" = "警告";
+"Caution" = "注意";
+
+/* Rendered view */
+"Copy code" = "コードをコピー";
+"Toggle task" = "タスクを切り替え";
+"Metadata" = "メタデータ";
+"Not found: %@" = "%@ が見つかりません";
+"Loading…" = "読み込み中…";
+"Empty document" = "空の書類";
+"Switch to the source view (⌘2) to start writing." = "書き始めるにはソース表示（⌘2）に切り替えてください。";
+
+/* Outline */
+"Outline" = "目次";
+"No headings" = "見出しがありません";
+"Filter headings" = "見出しをフィルタ";
+
+/* Window */
+"Untitled" = "無題";
+"document" = "書類";
+"Document" = "書類";
+"View mode" = "表示モード";
+"Rendered view, source code, or both" = "レンダリング表示、ソースコード、または両方";
+"Reading settings" = "閲覧設定";
+"%@ words · %@ min" = "%@ 語・%@ 分";
+"%@ lines" = "%@ 行";
+"%@ words" = "%@ 語";
+"%@ characters" = "%@ 文字";
+"%@ headings" = "%@ 件の見出し";
+"%@ min" = "%@ 分";
+
+/* Menus and toolbar */
+"Bigger text" = "テキストを拡大";
+"Smaller text" = "テキストを縮小";
+"Actual size" = "実際のサイズ";
+"Actual text size" = "テキストの実際のサイズ";
+"Typeface" = "書体";
+"Width" = "幅";
+"Narrow" = "狭い";
+"Normal" = "標準";
+"Wide" = "広い";
+"Full width" = "全幅";
+"Status bar" = "ステータスバー";
+"Appearance" = "外観";
+"Open .md files with Markdown Reader" = ".md ファイルを Markdown Reader で開く";
+"Export as HTML…" = "HTML として書き出す…";
+"Copy as HTML" = "HTML としてコピー";
+"Reveal in Finder" = "Finder で表示";
+"Rendered view" = "レンダリング表示";
+"Source code" = "ソースコード";
+"Split view" = "分割表示";
+"Show outline" = "目次を表示";
+"Hide outline" = "目次を非表示";
+"Editor" = "エディタ";
+"Line numbers" = "行番号";
+"Wrap lines" = "行を折り返す";
+"Syntax highlighting" = "シンタックスハイライト";
+"Bigger editor text" = "エディタのテキストを拡大";
+"Smaller editor text" = "エディタのテキストを縮小";
+
+/* Settings */
+"Reading" = "閲覧";
+"Typeface:" = "書体：";
+"Size:" = "サイズ：";
+"Text width:" = "テキスト幅：";
+"Narrow (620)" = "狭い（620）";
+"Normal (760)" = "標準（760）";
+"Wide (960)" = "広い（960）";
+"Fill the window" = "ウインドウに合わせる";
+"Appearance:" = "外観：";
+"Open documents in:" = "書類を開くとき：";
+"Show status bar" = "ステータスバーを表示";
+"Wrap long lines" = "長い行を折り返す";
+"Highlight Markdown syntax" = "Markdown の構文をハイライト";
+"Smart quotes and other automatic substitutions are always off, so the Markdown is never altered." = "スマートクォートやその他の自動置換は常にオフのため、Markdown が変更されることはありません。";
+"The quick brown fox jumps over the lazy dog." = "いろはにほへと ちりぬるを わかよたれそ つねならむ うゐのおくやま けふこえて あさきゆめみし ゑひもせす。";
+"Markdown Reader opens .md files" = "Markdown Reader が .md ファイルを開きます";
+"Another app opens .md files" = "ほかの App が .md ファイルを開きます";
+"Applies when you double-click a file in the Finder." = "Finder でファイルをダブルクリックしたときに適用されます。";
+"Use this app" = "この App を使用";
+
+/* Alerts */
+"Could not change the default app" = "デフォルトの App を変更できませんでした";
+"Markdown Reader is now the default app" = "Markdown Reader がデフォルトの App になりました";
+"Double-clicking a .md file will open it in Markdown Reader." = ".md ファイルをダブルクリックすると Markdown Reader で開きます。";

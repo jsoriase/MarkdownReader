@@ -1,0 +1,106 @@
+/* MarkdownReader — eu */
+/* View modes */
+"Preview" = "Aurrebista";
+"Source" = "Kodea";
+"Split" = "Zatitua";
+
+/* Typefaces */
+"System" = "Sistema";
+"Serif" = "Serif";
+"Rounded" = "Biribildua";
+"Monospaced" = "Monoespaziatua";
+
+/* Appearance */
+"Automatic" = "Automatikoa";
+"Light" = "Argia";
+"Dark" = "Iluna";
+
+/* GitHub-style callouts */
+"Note" = "Oharra";
+"Tip" = "Aholkua";
+"Important" = "Garrantzitsua";
+"Warning" = "Abisua";
+"Caution" = "Kontuz";
+
+/* Rendered view */
+"Copy code" = "Kopiatu kodea";
+"Toggle task" = "Markatu zeregina";
+"Metadata" = "Metadatuak";
+"Not found: %@" = "Ez da aurkitu: %@";
+"Loading…" = "Kargatzen…";
+"Empty document" = "Dokumentu hutsa";
+"Switch to the source view (⌘2) to start writing." = "Aldatu kode-bistara (⌘2) idazten hasteko.";
+
+/* Outline */
+"Outline" = "Aurkibidea";
+"No headings" = "Izenbururik gabe";
+"Filter headings" = "Iragazi izenburuak";
+
+/* Window */
+"Untitled" = "Izenik gabe";
+"document" = "dokumentua";
+"Document" = "Dokumentua";
+"View mode" = "Modua";
+"Rendered view, source code, or both" = "Formateatutako bista, iturburu-kodea edo biak";
+"Reading settings" = "Irakurketa-ezarpenak";
+"%@ words · %@ min" = "%@ hitz · %@ min";
+"%@ lines" = "%@ lerro";
+"%@ words" = "%@ hitz";
+"%@ characters" = "%@ karaktere";
+"%@ headings" = "%@ izenburu";
+"%@ min" = "%@ min";
+
+/* Menus and toolbar */
+"Bigger text" = "Handitu testua";
+"Smaller text" = "Txikitu testua";
+"Actual size" = "Jatorrizko tamaina";
+"Actual text size" = "Jatorrizko testu-tamaina";
+"Typeface" = "Tipografia";
+"Width" = "Zabalera";
+"Narrow" = "Estua";
+"Normal" = "Normala";
+"Wide" = "Zabala";
+"Full width" = "Zabalera osoa";
+"Status bar" = "Egoera-barra";
+"Appearance" = "Itxura";
+"Open .md files with Markdown Reader" = "Ireki .md fitxategiak Markdown Reader-ekin";
+"Export as HTML…" = "Esportatu HTML gisa…";
+"Copy as HTML" = "Kopiatu HTML gisa";
+"Reveal in Finder" = "Erakutsi Finderrean";
+"Rendered view" = "Formateatutako bista";
+"Source code" = "Iturburu-kodea";
+"Split view" = "Bista zatitua";
+"Show outline" = "Erakutsi aurkibidea";
+"Hide outline" = "Ezkutatu aurkibidea";
+"Editor" = "Editorea";
+"Line numbers" = "Lerro-zenbakiak";
+"Wrap lines" = "Doitu lerroak";
+"Syntax highlighting" = "Nabarmendu sintaxia";
+"Bigger editor text" = "Handitu editorearen testua";
+"Smaller editor text" = "Txikitu editorearen testua";
+
+/* Settings */
+"Reading" = "Irakurketa";
+"Typeface:" = "Tipografia:";
+"Size:" = "Tamaina:";
+"Text width:" = "Testuaren zabalera:";
+"Narrow (620)" = "Estua (620)";
+"Normal (760)" = "Normala (760)";
+"Wide (960)" = "Zabala (960)";
+"Fill the window" = "Bete leihoa";
+"Appearance:" = "Itxura:";
+"Open documents in:" = "Dokumentuak irekitzean:";
+"Show status bar" = "Erakutsi egoera-barra";
+"Wrap long lines" = "Doitu lerro luzeak";
+"Highlight Markdown syntax" = "Nabarmendu Markdown sintaxia";
+"Smart quotes and other automatic substitutions are always off, so the Markdown is never altered." = "Komatxo tipografikoak eta ordezpen automatikoak beti daude desaktibatuta, Markdowna inoiz alda ez dadin.";
+"The quick brown fox jumps over the lazy dog." = "Azeri marroi bizkorrak txakur alferraren gainetik salto egin zuen.";
+"Markdown Reader opens .md files" = "Markdown Reader-ek .md fitxategiak irekitzen ditu";
+"Another app opens .md files" = "Beste aplikazio batek irekitzen ditu .md fitxategiak";
+"Applies when you double-click a file in the Finder." = "Finderrean fitxategi bati klik bikoitza egitean aplikatzen da.";
+"Use this app" = "Erabili aplikazio hau";
+
+/* Alerts */
+"Could not change the default app" = "Ezin izan da aplikazio lehenetsia aldatu";
+"Markdown Reader is now the default app" = "Markdown Reader da orain aplikazio lehenetsia";
+"Double-clicking a .md file will open it in Markdown Reader." = ".md fitxategi bati klik bikoitza egitean Markdown Reader-en irekiko da.";

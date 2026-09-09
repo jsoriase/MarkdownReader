@@ -1,0 +1,107 @@
+/* MarkdownReader — bg */
+/* View modes */
+"Preview" = "Преглед";
+"Source" = "Код";
+"Split" = "Разделен";
+
+/* Typefaces */
+"System" = "Системен";
+"Serif" = "Серифен";
+"Rounded" = "Закръглен";
+"Monospaced" = "Моноширен";
+
+/* Appearance */
+"Automatic" = "Автоматично";
+"Light" = "Светла";
+"Dark" = "Тъмна";
+
+/* GitHub-style callouts */
+"Note" = "Бележка";
+"Tip" = "Съвет";
+"Important" = "Важно";
+"Warning" = "Предупреждение";
+"Caution" = "Внимание";
+
+/* Rendered view */
+"Copy code" = "Копиране на кода";
+"Toggle task" = "Отбелязване на задача";
+"Metadata" = "Метаданни";
+"Not found: %@" = "Не е намерено: %@";
+"Loading…" = "Зареждане…";
+"Empty document" = "Празен документ";
+"Switch to the source view (⌘2) to start writing." = "Превключете към изгледа с код (⌘2), за да започнете да пишете.";
+
+/* Outline */
+"Outline" = "Съдържание";
+"No headings" = "Без заглавия";
+"Filter headings" = "Филтриране на заглавия";
+
+/* Window */
+"Untitled" = "Без заглавие";
+"document" = "документ";
+"Document" = "Документ";
+"View mode" = "Режим";
+"Rendered view, source code, or both" = "Форматиран изглед, програмен код или и двете";
+"Reading settings" = "Настройки за четене";
+"%@ words · %@ min" = "%@ думи · %@ мин";
+"%@ lines" = "%@ реда";
+"%@ words" = "%@ думи";
+"%@ characters" = "%@ знака";
+"%@ headings" = "%@ заглавия";
+"%@ min" = "%@ мин";
+
+/* Menus and toolbar */
+"Bigger text" = "Уголемяване на текста";
+"Smaller text" = "Намаляване на текста";
+"Actual size" = "Действителен размер";
+"Actual text size" = "Действителен размер на текста";
+"Typeface" = "Шрифт";
+"Width" = "Ширина";
+"Narrow" = "Тесен";
+"Normal" = "Нормален";
+"Wide" = "Широк";
+"Full width" = "Пълна ширина";
+"Status bar" = "Лента на състоянието";
+"Appearance" = "Облик";
+"Open .md files with Markdown Reader" = "Отваряне на .md файлове с Markdown Reader";
+"Export as HTML…" = "Експортиране като HTML…";
+"Copy as HTML" = "Копиране като HTML";
+"Reveal in Finder" = "Показване във Finder";
+"Rendered view" = "Форматиран изглед";
+"Source code" = "Програмен код";
+"Split view" = "Разделен изглед";
+"Show outline" = "Показване на съдържанието";
+"Hide outline" = "Скриване на съдържанието";
+"Editor" = "Редактор";
+"Line numbers" = "Номера на редове";
+"Wrap lines" = "Пренасяне на редове";
+"Syntax highlighting" = "Оцветяване на синтаксиса";
+"Bigger editor text" = "Уголемяване на текста в редактора";
+"Smaller editor text" = "Намаляване на текста в редактора";
+
+/* Settings */
+"Reading" = "Четене";
+"Typeface:" = "Шрифт:";
+"Size:" = "Размер:";
+"Text width:" = "Ширина на текста:";
+"Narrow (620)" = "Тесен (620)";
+"Normal (760)" = "Нормален (760)";
+"Wide (960)" = "Широк (960)";
+"Fill the window" = "По ширината на прозореца";
+"Appearance:" = "Облик:";
+"Open documents in:" = "При отваряне на документ:";
+"Show status bar" = "Показване на лентата на състоянието";
+"Line numbers" = "Номера на редове";
+"Wrap long lines" = "Пренасяне на дългите редове";
+"Highlight Markdown syntax" = "Оцветяване на синтаксиса на Markdown";
+"Smart quotes and other automatic substitutions are always off, so the Markdown is never altered." = "Умните кавички и другите автоматични замени са винаги изключени, за да не се променя Markdown.";
+"The quick brown fox jumps over the lazy dog." = "Ах, чудна българска земьо, полюшвай цъфтящи жита!";
+"Markdown Reader opens .md files" = "Markdown Reader отваря .md файловете";
+"Another app opens .md files" = "Друго приложение отваря .md файловете";
+"Applies when you double-click a file in the Finder." = "Важи при двойно щракване върху файл във Finder.";
+"Use this app" = "Използване на това приложение";
+
+/* Alerts */
+"Could not change the default app" = "Приложението по подразбиране не можа да бъде променено";
+"Markdown Reader is now the default app" = "Markdown Reader вече е приложението по подразбиране";
+"Double-clicking a .md file will open it in Markdown Reader." = "Файловете .md ще се отварят в Markdown Reader при двойно щракване.";

@@ -1,0 +1,107 @@
+/* MarkdownReader — nl */
+
+/* View modes */
+"Preview" = "Voorvertoning";
+"Source" = "Bron";
+"Split" = "Gesplitst";
+
+/* Typefaces */
+"System" = "Systeem";
+"Serif" = "Serif";
+"Rounded" = "Afgerond";
+"Monospaced" = "Monospace";
+
+/* Appearance */
+"Automatic" = "Automatisch";
+"Light" = "Licht";
+"Dark" = "Donker";
+
+/* GitHub-style callouts */
+"Note" = "Opmerking";
+"Tip" = "Tip";
+"Important" = "Belangrijk";
+"Warning" = "Waarschuwing";
+"Caution" = "Let op";
+
+/* Rendered view */
+"Copy code" = "Kopieer code";
+"Toggle task" = "Taak afvinken";
+"Metadata" = "Metagegevens";
+"Not found: %@" = "Niet gevonden: %@";
+"Loading…" = "Laden…";
+"Empty document" = "Leeg document";
+"Switch to the source view (⌘2) to start writing." = "Schakel over naar de bronweergave (⌘2) om te beginnen met schrijven.";
+
+/* Outline */
+"Outline" = "Overzicht";
+"No headings" = "Geen koppen";
+"Filter headings" = "Filter koppen";
+
+/* Window */
+"Untitled" = "Naamloos";
+"document" = "document";
+"Document" = "Document";
+"View mode" = "Weergavemodus";
+"Rendered view, source code, or both" = "Gerenderde weergave, broncode of beide";
+"Reading settings" = "Leesinstellingen";
+"%@ words · %@ min" = "%@ woorden · %@ min";
+"%@ lines" = "%@ regels";
+"%@ words" = "%@ woorden";
+"%@ characters" = "%@ tekens";
+"%@ headings" = "%@ koppen";
+"%@ min" = "%@ min";
+
+/* Menus and toolbar */
+"Bigger text" = "Grotere tekst";
+"Smaller text" = "Kleinere tekst";
+"Actual size" = "Werkelijke grootte";
+"Actual text size" = "Werkelijke tekstgrootte";
+"Typeface" = "Lettertype";
+"Width" = "Breedte";
+"Narrow" = "Smal";
+"Normal" = "Normaal";
+"Wide" = "Breed";
+"Full width" = "Volledige breedte";
+"Status bar" = "Statusbalk";
+"Appearance" = "Weergave";
+"Open .md files with Markdown Reader" = "Open .md-bestanden met Markdown Reader";
+"Export as HTML…" = "Exporteer als HTML…";
+"Copy as HTML" = "Kopieer als HTML";
+"Reveal in Finder" = "Toon in Finder";
+"Rendered view" = "Gerenderde weergave";
+"Source code" = "Broncode";
+"Split view" = "Gesplitste weergave";
+"Show outline" = "Toon overzicht";
+"Hide outline" = "Verberg overzicht";
+"Editor" = "Editor";
+"Line numbers" = "Regelnummers";
+"Wrap lines" = "Regels afbreken";
+"Syntax highlighting" = "Syntaxisaccentuering";
+"Bigger editor text" = "Grotere editortekst";
+"Smaller editor text" = "Kleinere editortekst";
+
+/* Settings */
+"Reading" = "Lezen";
+"Typeface:" = "Lettertype:";
+"Size:" = "Grootte:";
+"Text width:" = "Tekstbreedte:";
+"Narrow (620)" = "Smal (620)";
+"Normal (760)" = "Normaal (760)";
+"Wide (960)" = "Breed (960)";
+"Fill the window" = "Venster vullen";
+"Appearance:" = "Weergave:";
+"Open documents in:" = "Open documenten in:";
+"Show status bar" = "Toon statusbalk";
+"Wrap long lines" = "Breek lange regels af";
+"Highlight Markdown syntax" = "Markeer Markdown-syntaxis";
+"Smart quotes and other automatic substitutions are always off, so the Markdown is never altered." = "Slimme aanhalingstekens en andere automatische vervangingen staan altijd uit, zodat de Markdown nooit wordt gewijzigd.";
+"The quick brown fox jumps over the lazy dog." = "De vlugge bruine vos springt over de luie hond.";
+"Markdown Reader opens .md files" = "Markdown Reader opent .md-bestanden";
+"Another app opens .md files" = "Een andere app opent .md-bestanden";
+"Applies when you double-click a file in the Finder." = "Geldt wanneer je dubbelklikt op een bestand in de Finder.";
+"Use this app" = "Gebruik deze app";
+
+/* Alerts */
+"Could not change the default app" = "Kon de standaardapp niet wijzigen";
+"Markdown Reader is now the default app" = "Markdown Reader is nu de standaardapp";
+"Double-clicking a .md file will open it in Markdown Reader." = "Als je dubbelklikt op een .md-bestand, wordt het geopend in Markdown Reader.";

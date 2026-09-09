@@ -1,0 +1,106 @@
+/* MarkdownReader — sv */
+/* View modes */
+"Preview" = "Förhandsvisning";
+"Source" = "Källkod";
+"Split" = "Delad";
+
+/* Typefaces */
+"System" = "System";
+"Serif" = "Serif";
+"Rounded" = "Rundad";
+"Monospaced" = "Monospace";
+
+/* Appearance */
+"Automatic" = "Automatiskt";
+"Light" = "Ljust";
+"Dark" = "Mörkt";
+
+/* GitHub-style callouts */
+"Note" = "Anteckning";
+"Tip" = "Tips";
+"Important" = "Viktigt";
+"Warning" = "Varning";
+"Caution" = "Försiktighet";
+
+/* Rendered view */
+"Copy code" = "Kopiera kod";
+"Toggle task" = "Markera uppgift";
+"Metadata" = "Metadata";
+"Not found: %@" = "Hittades inte: %@";
+"Loading…" = "Läser in…";
+"Empty document" = "Tomt dokument";
+"Switch to the source view (⌘2) to start writing." = "Växla till källkodsvyn (⌘2) för att börja skriva.";
+
+/* Outline */
+"Outline" = "Disposition";
+"No headings" = "Inga rubriker";
+"Filter headings" = "Filtrera rubriker";
+
+/* Window */
+"Untitled" = "Namnlöst";
+"document" = "dokument";
+"Document" = "Dokument";
+"View mode" = "Läge";
+"Rendered view, source code, or both" = "Formaterad vy, källkod eller båda";
+"Reading settings" = "Läsningsinställningar";
+"%@ words · %@ min" = "%@ ord · %@ min";
+"%@ lines" = "%@ rader";
+"%@ words" = "%@ ord";
+"%@ characters" = "%@ tecken";
+"%@ headings" = "%@ rubriker";
+"%@ min" = "%@ min";
+
+/* Menus and toolbar */
+"Bigger text" = "Större text";
+"Smaller text" = "Mindre text";
+"Actual size" = "Verklig storlek";
+"Actual text size" = "Verklig textstorlek";
+"Typeface" = "Typsnitt";
+"Width" = "Bredd";
+"Narrow" = "Smal";
+"Normal" = "Normal";
+"Wide" = "Bred";
+"Full width" = "Full bredd";
+"Status bar" = "Statusfält";
+"Appearance" = "Utseende";
+"Open .md files with Markdown Reader" = "Öppna .md-filer med Markdown Reader";
+"Export as HTML…" = "Exportera som HTML…";
+"Copy as HTML" = "Kopiera som HTML";
+"Reveal in Finder" = "Visa i Finder";
+"Rendered view" = "Formaterad vy";
+"Source code" = "Källkod";
+"Split view" = "Delad vy";
+"Show outline" = "Visa disposition";
+"Hide outline" = "Göm disposition";
+"Editor" = "Redigerare";
+"Line numbers" = "Radnummer";
+"Wrap lines" = "Radbryt rader";
+"Syntax highlighting" = "Syntaxmarkering";
+"Bigger editor text" = "Större redigerartext";
+"Smaller editor text" = "Mindre redigerartext";
+
+/* Settings */
+"Reading" = "Läsning";
+"Typeface:" = "Typsnitt:";
+"Size:" = "Storlek:";
+"Text width:" = "Textbredd:";
+"Narrow (620)" = "Smal (620)";
+"Normal (760)" = "Normal (760)";
+"Wide (960)" = "Bred (960)";
+"Fill the window" = "Fyll fönstret";
+"Appearance:" = "Utseende:";
+"Open documents in:" = "Öppna dokument i:";
+"Show status bar" = "Visa statusfältet";
+"Wrap long lines" = "Radbryt långa rader";
+"Highlight Markdown syntax" = "Markera Markdown-syntax";
+"Smart quotes and other automatic substitutions are always off, so the Markdown is never altered." = "Smarta citattecken och andra automatiska ersättningar är alltid av, så att Markdown aldrig ändras.";
+"The quick brown fox jumps over the lazy dog." = "Flygande bäckasiner söka strax hwila på mjuka tuvor.";
+"Markdown Reader opens .md files" = "Markdown Reader öppnar .md-filer";
+"Another app opens .md files" = "En annan app öppnar .md-filer";
+"Applies when you double-click a file in the Finder." = "Gäller när du dubbelklickar på en fil i Finder.";
+"Use this app" = "Använd den här appen";
+
+/* Alerts */
+"Could not change the default app" = "Kunde inte ändra standardappen";
+"Markdown Reader is now the default app" = "Markdown Reader är nu standardappen";
+"Double-clicking a .md file will open it in Markdown Reader." = "Om du dubbelklickar på en .md-fil öppnas den i Markdown Reader.";

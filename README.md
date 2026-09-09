@@ -46,7 +46,10 @@ code block on screen is a real AppKit view.
 
 - **Export as HTML** — a self-contained file with light and dark styles — or
   **Copy as HTML** for pasting into another app.
-- **Localised** in English and Spanish; the app follows your system language.
+- **Localised** in 43 languages (ar, be, bg, bs, ca, cs, da, de, el, en, es, et,
+  eu, fi, fr, ga, gl, hi, hr, hu, is, it, ja, lb, lt, lv, mk, mt, nb, nl, pl,
+  pt-BR, pt-PT, ro, ru, sk, sl, sq, sr, sv, tr, uk, zh-Hans); the app follows
+  your system language.
 - Opens `.md`, `.markdown`, `.mdown`, `.mkd`, `.mkdn`, `.mdwn`, `.mdtxt`,
   `.mdtext`, `.qmd` and `.rmd`, and registers as an alternate handler for plain
   text.
