@@ -1,3 +1,5 @@
+<img src="docs/app-icon.png" width="128" alt="Markdown Reader icon">
+
 # Markdown Reader
 
 A native Markdown viewer for macOS, written in SwiftUI. It is built for
